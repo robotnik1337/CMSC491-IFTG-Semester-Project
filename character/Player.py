@@ -15,3 +15,6 @@ class Player(Character):
                  location: Location | None = None) -> None:
         super().__init__(name, inventory, hp, mana)
         self.location = location
+
+    def set_location(self, location: Location) -> None:
+        self.location = location
