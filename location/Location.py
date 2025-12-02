@@ -9,6 +9,26 @@ DEF_NAME = "Location"
 DEF_DESC = "Description"
 DEF_DIRECTIONS = [-1, -1, -1, -1, -1]
 
+# Other Constants
+
+DIRECTION_MAP = {
+    "n": "north",
+    "north": "north",
+    "e": "east",
+    "east": "east",
+    "s": "south",
+    "south": "south",
+    "w": "west",
+    "west": "west"
+}
+
+DIR_TO_INDEX = {
+    "north": 0,
+    "east": 1,
+    "south": 2,
+    "west": 3
+}
+
 
 class Location:
     """Represents a location within the IF game, or a tile on the map
@@ -27,7 +47,7 @@ class Location:
                  desc: str = DEF_DESC, block: Block | None = None,
                  npcs: List[Npc] | None = None,
                  directions: List[int] = DEF_DIRECTIONS):
-        """ Initializes Location"""
+        """Initializes Location"""
         self.id = id
         self.name = name
         self.desc = desc
@@ -58,3 +78,31 @@ class Location:
         if island:
             print("None", end="")
         print()
+
+    def valid_exit(self, noun: str) -> bool:
+        """Checks if the direction passed in is a valid Exits
+
+        Attributes:
+            noun (str): could be any string the parser accepts
+        """
+        if noun in DIRECTION_MAP:
+            dir = DIRECTION_MAP[noun]
+            idx = DIR_TO_INDEX[dir]
+            if self.directions[idx] > -1:
+                return True
+
+        return False
+
+    def dir_to_id(self, noun: str) -> int:
+        """Returns the location id of the direction from
+        this location
+
+        Attributes:
+            noun (str): could be any string the parser accepts
+        """
+        if noun in DIRECTION_MAP:
+            dir = DIRECTION_MAP[noun]
+            idx = DIR_TO_INDEX[dir]
+            return self.directions[idx]
+
+        return -1
