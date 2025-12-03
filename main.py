@@ -1,9 +1,15 @@
-from utils.utils import pick_class, parser
-from location.Location import Location
+from utils.utils import pick_class, parser, load_map
+from action.Go import Go
 
 if __name__ == "__main__":
-    loc = Location(0, "Trial", "super insane location with amazing dragon wow",
-                   None, None, [-1, 1, 0, -1, -1])
-    loc.display()
-    class_choice = pick_class()
-    print(f"You picked option {class_choice}")
+    map = load_map()
+    user = pick_class(map)
+    user.location.display()
+    choice = None
+    while (choice != 'q'):
+        choice = input()
+        cmd, noun = parser(choice)
+        print(f"cmd: {cmd}, noun: {noun}\n\n")
+        if cmd == "go" and noun is not None:
+            Go(user, cmd, noun, map)
+            user.location.display()
