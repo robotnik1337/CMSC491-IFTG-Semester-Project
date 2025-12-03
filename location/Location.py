@@ -63,16 +63,16 @@ class Location:
         print("Exits:")
 
         if self.directions[0] > -1:
-            print("\t- North: ")
+            print("\t- North")
             island = False
         if self.directions[1] > -1:
-            print("\t- East: ")
+            print("\t- East")
             island = False
         if self.directions[2] > -1:
-            print("\t- South: ")
+            print("\t- South")
             island = False
         if self.directions[3] > -1:
-            print("\t- West: ")
+            print("\t- West")
             island = False
 
         if island:

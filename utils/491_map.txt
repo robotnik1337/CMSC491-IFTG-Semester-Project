@@ -1,0 +1,7 @@
+1| Miru| A fortified village that holds several thousand people who call Miru home. It is a center for trades of many kinds and knowledge. The village is plagued by the Qayral, who constantly try to destroy the village.| -1|  2| 3| -1
+2| Military Base| One of Miru’s military bases, where training and preparation towards destroying the Qayral and defending Miru takes place.| -1|  -1| 4| 1
+3| Jinn's Lair| A dark cave teeming with bloodlusted Qayral. There seems to be some dark energy emanating from the cave.| 1|  4| -1| -1
+4| Elria|  A beautiful, prosperous, and grand city, home to many of the mystic and physical arts. Its tall, white and gold structure beams elegance and sophistication. The city is a bustling economic hub, diverse, and well fortified.| 2|  7| 5| 3
+5| Sierran Woodlands| A dense forest, covered in snow and trees of all kinds and shapes. Some say these trees hold magical energy that can be used to heal, curse, and much more.| 4|  6| -1| -1
+6| Ashen| A town in the snowy hills, home to the well-renowned Magic Academy. This town is a hub for mystical arts, where the novice and best sorcerers, alchemists, and more come to learn and exchange knowledge.| 7|  -1| -1| 5
+7| Wycan Forest| This forest is always dark, surrounded by a deep cloud of mist. Some of the people who’ve entered this forest never returned or went insane. Those with strong acumen can withstand whatever magic this forest entails.| -1|  -1| 6| 4
