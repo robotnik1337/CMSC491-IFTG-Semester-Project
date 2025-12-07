@@ -1,0 +1,1737 @@
+[
+    {
+        "name": "A Bard's Request",
+        "objective": "bring an authoritative history of the Unicorn Run to Rinnie",
+        "description": "\"Sweet waters of the forest\nflow through each den and glade\nnourishing the unicorns\nwho lie graceful in the shade...\"\n\nI'm Rinnie, a bard and balladeer.\nI have been working on a ballad about the Unicorn Run in the High Forest. I'd like to use a more reliable source than simply hearsay and folklore, though. If you ever find an authoritative history of the run in your travels, I'd love to get my hands on it.\nA friend of mine gave me this Scroll of Protection From Poison and I have yet to make use of it, so you could have it as a reward.",
+        "quest_giver": {
+            "name": "Rinnie",
+            "description": "a bard and balladeer",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "Scroll of Protection From Poison",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "A Book for Firebead",
+        "objective": "bring \"The History of the Fateful Coin\" to Firebead Elvenhair",
+        "description": "Hello, I am Firebead Elvenhair: an elderly mage and a bookworm.\nOh, the world of books... I have heard that a new copy of that wondrous tome, \"The History of the Fateful Coin,\" can be had for a pretty penny in one of the stores around here. If you would be so kind as to buy it for an old man like myself, I'd gladly reimburse you.\nI'd even give you a little bonus to help in your travels, a book called \"History of the Dead Three\".",
+        "quest_giver": {
+            "name": "Firebead Elvenhair",
+            "description": "an elderly mage who loves books",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "\"History of the Dead Three\"",
+                "description": "a book",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "A Child in the Lighthouse",
+        "objective": "save Ardrouine's little son from worgs",
+        "description": "Please help me, I am just poor Ardrouine!\nI don't know where else to turn. My little boy was playing in that abandoned lighthouse to the northwest when a pack of worgs surrounded it. Please just turn them back, and I can coax him down. There's not much time!\nI can pay you 60 coins: this money is all my husband brought back from market this past week. My son's life is worth this and so much more.",
+        "quest_giver": {
+            "name": "Ardrouine",
+            "description": "a distressed mother",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "coins",
+                "amount": 60
+            }
+        ]
+    },
+    {
+        "name": "A Contract Killing",
+        "objective": "assassinate Cyrdemac",
+        "description": "Perhaps... perhaps you are the type of people who can help me. I am in need of someone to... perform a service for me. I need someone... removed. This scoundrel is no innocent! He threatens to ruin my life with... with the spreading of... accusations. He threatens to ruin my reputation and standing unless I pay him an exorbitant sum almost weekly! I beg of thee... you must help me. His name is Cyrdemac and he frequents the Elfsong Tavern. I have not been there myself, but I hear it is quite a rough place. You could do the deed in the main bar itself and likely none would call the guards. I know not if he will have friends with him though. Thank you for this.\nUpon your return I shall pay you 2,000 gold. A small price to have this embarrassment removed.",
+        "quest_giver": {
+            "name": "Areana",
+            "description": "a mysterious noblewoman",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold",
+                "amount": 2000
+            }
+        ]
+    },
+    {
+        "name": "Albert and His Dog",
+        "objective": "bring Rufie to Albert",
+        "description": "Hi! I'm Albert.\n'Scuse me. I ever so sowwy to bother, but could you help me? I've lost my little dog Rufie and I can't find him. He's probably ever so scared wight now. Poor Rufie isn't used to strange places an' people. You're sure to know him when you see him, 'cuz he's just the cutest little thing. Here, take this as well. His favorite chew toy, it is. He'll know you're a friend if you have it in your hands.\nI have a small reward for you: it's another of his chew things, but we can get more where we're going.",
+        "quest_giver": {
+            "name": "Albert",
+            "description": "a young boy",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "Rufie's another chew toy",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "A Corpse for Arkion",
+        "objective": "bring a corpse to Arkion",
+        "description": "The name's Arkion.\nI've got a dirty deed fer ya. How 'bout you go down into the sewers and bring me up a body. Now, I don't ask questions 'bout how you come 'bout them and I don't want any questions 'bout what I use 'em fer. Bring 'em to me when ya find 'em.\nThere'll be 250 gold pieces to relieve the stink of it all.",
+        "quest_giver": {
+            "name": "Arkion",
+            "description": "a necromancer",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold pieces",
+                "amount": 250
+            }
+        ]
+    },
+    {
+        "name": "Alatos and the Thieves' Guild",
+        "objective": "steal spellbook, statuette, and artifact fragment, and bring them to Alatos Thuibuld",
+        "description": "I am Alatos Thuibuld, though I thank you not to mention that too often.\nA local wizard by the name of Shandalar makes his home in a moored Halruaan skyship. It would appear that he has the knowledge to reproduce these flying marvels and is currently organizing the sale of the recipe to Grand Duchess Liia Jannath. He has drawn up a set of rituals and has procured an artifact fragment and an ancient statuette vital to the spell that keeps the ships aloft. These he has divided amongst his daughters until the deal is to proceed. I have been contacted by a representative of the Halruaans, and they have no wish to see scores of flying ships manufactured in every port. You are to infiltrate the place of exchange that is known as Oberan's Estate, steal the ingredients, and return here with them. Simple enough.\nYou would be well paid. Enough gold to give you a backache and, if I am well pleased, mayhaps a magical weapon or two. Perhaps a little more, perhaps a little less. It entirely depends upon your performance.",
+        "quest_giver": {
+            "name": "Alatos Thuibuld",
+            "description": "the leader of the Thieves' Guild",
+            "location": "Baldur's Gate"
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a lot of gold",
+                "amount": 1
+            },
+            {
+                "name": "",
+                "description": "a magical weapon or two if the player performs well",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Arkion's Amulet",
+        "objective": "steal Arkion's amulet and bring it to Nemphre",
+        "description": "Mmm, be a sweet one. Could you do a favor for Nemphre?\nAn old lover of mine has followed me here to the city and has been threatening me with some very dark magic. His name is Arkion and, if you could just get a certain amulet of his to me, perhaps there are a few things I could do for you? Such as giving you a Scroll of Vampiric Touch, mmn?",
+        "quest_giver": {
+            "name": "Nemphre",
+            "description": "a flirty woman",
+            "location": "Baldur's Gate"
+        },
+        "reward": [
+            {
+                "name": "Scroll of Vampiric Touch",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Arkion and Nemphre",
+        "objective": "steal Arkion's Bloodstone Amulet and Nemphre's Onyx Ring, and bring them to Ordulinian",
+        "description": "Ah, fair adventurers, I'm Ordulinian.\nThe roads of this fair city are lined with fools, are they not? Two of the greatest are Arkion and Nemphre, necromancers grown bitter over lost love. Alas, but they use petty trinkets as their excuse for enmity. Nemphre covets Arkion's Bloodstone Amulet and Arkion dreams of her Onyx Ring. Steal those trinkets and bring them to me and perhaps those two fools can at last find peace.\nFor your troubles I will give you a Cloak of Non-Detection. It may be of some use to you in the future.",
+        "quest_giver": {
+            "name": "Ordulinian",
+            "description": "a priest",
+            "location": "Baldur's Gate"
+        },
+        "reward": [
+            {
+                "name": "Cloak of Non-Detection",
+                "description": "a useful cloak",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "A Ring for a Lady",
+        "objective": "bring an angel skin ring to Fergus",
+        "description": "I'm Fergus, a very happy man.\nI've got to admit, I ain't never been happier. Got a letter from my lady and she's gonna be home reeeal soon... Just gotta find me a pretty little ring for her pretty little finger and all's gonna be just fine, just fine. But my lady, she transcends gold or silver or fancy stones. She'll have nothing less than an angel skin ring from me.\nFor reward, if you're ever needin' a little work around here, check with Scar, second-in-command of the city guard. You can tell him I recommended you.",
+        "quest_giver": {
+            "name": "Fergus",
+            "description": "a happy man who wants to give a gift to his wife",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "recommendation to Scar",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "A Rogue Ogre",
+        "objective": "bring the Girdle of Piercing to Unshey",
+        "description": "Hey, I'm Unshey, an aspiring writer.\nHave you heard? There's a rogue ogre with a belt fetish to the south of the Friendly Arm Inn. I had to bargain my new girdle of piercing for my life out there. Wasn't even interested in an autographed copy of my book. Hey, if you can get that belt back to me, I'd be mighty grateful.\nYou'll get 95 gold pieces for your trouble, and a new history book I've just completed.",
+        "quest_giver": {
+            "name": "Unshey",
+            "description": "a writer",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a history book written by Unshey",
+                "amount": 1
+            },
+            {
+                "name": "",
+                "description": "gold pieces",
+                "amount": 95
+            }
+        ]
+    },
+    {
+        "name": "A Curious Business Proposal",
+        "objective": "buy everything from Delsvirftanyon for 500 gold",
+        "description": "I'm Delsvirftanyon, a merchant by trade.\nI sell the small and shinies for the tourists in the Durlag's Tower but there are none now there! Bandits on the roads keep the people off and away so I'm stuck with all this stock I am. Ward tokens I have of all shapes and size. Some I found by elven ruin and some I made myself I made. Maybe some good or maybe all bad but don't they all look pretty? I tell you what I will. I'll sell you everything I have you buy for low low price of 500 gold is all. Then I go home where they appreciate a bauble shine.\nBuy or no and walk the walk?",
+        "quest_giver": {
+            "name": "Delsvirftanyon",
+            "description": "a merchant",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "Delsvirftanyon's stock",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "A Hidden Base in the Cloakwood",
+        "objective": "investigate Tazok and his group of bandits",
+        "description": "This whole thing is dirty to the core, that's what I know! These aren't your ordinary bandits here. Tazok's been making regular visits to the Cloakwood, so that's where I'd start if I were you. There are some documents in that chest that might be worth taking a look at, too.\nNow go step on some toes, all right? And you can tell them Ender Sai sent you.",
+        "quest_giver": {
+            "name": "Ender Sai",
+            "description": "a spy",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "An Errand for Fuller",
+        "objective": "bring a quarrel of crossbow bolts to Fuller",
+        "description": "Hey kid, it's me, Fuller.\nI need a quarrel of crossbow bolts. If you could get some off Winthrop at the inn, I'll reimburse you. there'll be a dagger in it for you too. My father killed a hobgoblin with it once, many years ago. Stabbed him right in the back, he did. It ain't no broadsword, but it'll do in a pinch.",
+        "quest_giver": {
+            "name": "Fuller",
+            "description": "a guard",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a dagger",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Ankheg Culling",
+        "objective": "kill exactly 4 ankhegs",
+        "description": "I'm Gerde, a ranger.\nYou've come here to fight ankhegs? Well, listen up: it's mating season, so it's primarily females coming up to the surface, looking to put on a little extra weight. They're hungry, they're aggressive, and there are a lot of them. Now, the point of this exercise is not to exterminate them, but to keep their population to a manageable level. Remember, they aerate the soil and thereby improve crop yields by as much as 15%. Food is going to be scarce enough in the next few years, so keep that in mind when you're out there. No more than four ankhegs per party. After that it's catch and release, all right? Most of the activity starts about fifty yards to the east.\nNow move out, everyone. You'll get 75 gold pieces, if you stick to the quota.",
+        "quest_giver": {
+            "name": "Gerde",
+            "description": "a ranger",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold pieces",
+                "amount": 75
+            }
+        ]
+    },
+    {
+        "name": "Arcand the Mad",
+        "objective": "bring Mad Arcand the Stinking's ring to him",
+        "description": "I like you, yes I do (wertle, wertle, wertle, wooo...) and I know of a way to make you like me too (wertle, wertle, wertle-wooooo...).\nDown by the ocean, down by the sea, there's a pirate ship waiting for you and for me. Bring me what's in it, but don't ever wear it, or sure enough, soon enough, you'll wertle too... A beautiful ring! Where to get it? (Most likely quite near where exactly I put it...) Wertle, oh wertle, oh dear wertle-wooo... wertle, oh wertle, oh woo...\nOh, I know what you're thinking of Mad Arcand the Stinking who takes what you give him and gives not in return. So there is this bottle, but please don't topple or (wertle, poor wertle), you'll surely get burned.",
+        "quest_giver": {
+            "name": "Mad Arcand the Stinking",
+            "description": "a happy and insane wizard",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a bottle that can burn the player",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Nadarin and the Basilisk",
+        "objective": "kill a basilisk and return to Nadarin for your reward",
+        "description": "Hey, you! Are you either bored or foolish? Either way, I, Nadarin, could use your services.\nSome wiseacre tried to send a basilisk by freight and now it's broken free and is making a mess of one of the warehouses at the harbor.\nThere'll be 500 gold pieces for taking care of that on such short notice. Also, you might want these. They're an item I obtained from a fence I know in a far-away city. You never know, they might fit you.",
+        "quest_giver": {
+            "name": "Nadarin",
+            "description": "an annoyed warehouse overseer",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold pieces",
+                "amount": 500
+            },
+            {
+                "name": "",
+                "description": "a pair of boots",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Bassilus the Murderer",
+        "objective": "kill Bassilus and bring his holy symbol to Kelddath Ormlyr",
+        "description": "A warning from Kelddath Ormlyr:\nknow that there is a madman by the name of Bassilus who roams the wilderness killing any innocents that happen along his path. He's been last sighted in Red Canyons.\nIf you were to dispose of him and bring back his holy symbol, there is a large reward offered. It is a grisly task, but sometimes there is little choice.",
+        "quest_giver": {
+            "name": "Kelddath Ormlyr",
+            "description": "a man of justice",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a large reward",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Branwen Rescued",
+        "objective": "unpetrify Branwen",
+        "description": "Come one, come all! Zeke's got something to show you!\nTake a look at the stone warrior maiden. How long has she been trapped in this petrified form, no one knows! Be the first to learn, for the mere price of 500 gold. For that small amount of money, I shall give you a magic scroll, and with this scroll you can release the maiden from her stone prison. Think of the gratitude she would feel to her saviors. Perhaps she's a princess from some far-off land, or maybe a powerful sorceress in search of a concubine. You can't afford not to know!\nBuy the scroll!",
+        "quest_giver": {
+            "name": "Zeke",
+            "description": "a charlatan",
+            "location": "Nashkel Carnival"
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "knowledge about Branwen",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Brielbara's Baby",
+        "objective": "bring Yago's spellbook to Brielbara",
+        "description": "Travelers! I am Brielbara, a mage of minor power.\nI'll pay you 200 gold, not much for heroic adventurers, but all that I have.\nAn evil mage has laid a curse upon my only child, Namara. She is slowly wasting away and, without help, she'll die. The mage who did this is named Yago, and I'm sure that he possesses the remedy to the curse. Would you track him down for me, please? He's been staying at a place called the Low Lantern. It's the playground for the wicked and depraved, a ship where prostitutes ply their trade. All I want you to do is find him and take his spellbook. I have enough magical skill to reverse the curse if I had the formula for his spell.",
+        "quest_giver": {
+            "name": "Brielbara",
+            "description": "a female mage of minor power",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold",
+                "amount": 200
+            }
+        ]
+    },
+    {
+        "name": "Colquetle's Family",
+        "objective": "find out what happened to Mr. Colquetle's son and his wife",
+        "description": "What cruel whim of the fates controls this torment of me?!\nI, Mr. Colquetle, have heard nothing from my son and his wife for nigh unto a week now, and all else pales in importance until I do. I should have known better than to allow his travel in these dangerous times.",
+        "quest_giver": {
+            "name": "Mr. Colquetle",
+            "description": "a depressed man",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Cordyr and the Sirines",
+        "objective": "kill the sirines that sank Cordyr's fishing boat",
+        "description": "Pleasure to meet you. The name's Cordyr.\nI'm from down south, where the Cloud Peaks tumble into the sea. A pair of sirines has been trying to move into the area. They sank my fishing boat and put me right out of work. *sigh* If they weren't so dang beautiful, it would be a lot easier to convince people of how much of a nuisance they can be. Can you kill them for me? It's a dirty deed but it's the cost of civilization, isn't it?\nYou can have a haste scroll as payment.",
+        "quest_giver": {
+            "name": "Cordyr",
+            "description": "a fisherman from down south, where the Cloud Peaks tumble into the sea",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a haste scroll",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Dreppin's Cow",
+        "objective": "give an antidote potion to Dreppin so he can cure Nessa's illness",
+        "description": "Hi. I'm Dreppin. Nice day, ain't it? Too bad Nessa the cow here ain't enjoyin' it though, her bein' sick 'n all.\nI need to get her one of them potions of antidote off Hull. He stayed up drinkin' last night and got hauled outta bed to man the gates early this morning, so I bet he's got a few of them lyin' around somewheres.",
+        "quest_giver": {
+            "name": "Dreppin",
+            "description": "a farmer",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Drienne's Cat",
+        "objective": "bring Pixie to Drienne",
+        "description": "I'm just a little girl Drienne.\nMommy says if you ever need to know something important, you should ask an adult. Pixie, my cat, she was playing close to the waterfall and slipped... I hope she's all right.\nYou can have this scroll Daddy gave me, if you find Pixie. I can't read the words yet anyways.",
+        "quest_giver": {
+            "name": "Drienne",
+            "description": "a young girl",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a scroll",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Dryad of the Cloud Peaks",
+        "objective": "save Dryad of the Cloud Peaks' ancient oak from dying",
+        "description": "Please, kind spirits, a wondrous ancient oak is in peril. It is the tree to which I am bonded! If it dies, I, Dryad of the Cloud Peaks, die.\nIt is about to be attacked by two who would defile the majesty of nature. They have avoided my charms and must be stopped before irreparable harm is done. Would you heed my plea?\nThere is a potion that might help you on your journeys.",
+        "quest_giver": {
+            "name": "Dryad of the Cloud Peaks",
+            "description": "a distressed dryad",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a potion",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Edwin and Dynaheir",
+        "objective": "kill Dynaheir",
+        "description": "I am Edwin, a wizard, and I require you! (Yes, they will do nicely.)\nI would have you kill a witch, the witch Dynaheir. She is treacherous, but with your participation I foresee no difficulty. Last I heard of her, she was traveling to the west of Nashkel, close to the gnoll stronghold located there. Will you assist?\nThe prize I offer would surely be beyond measure in your meager understanding. Your payment shall be one year of my services as a wizard. I am sure you agree that my guidance will be far more valuable than any monetary sum.",
+        "quest_giver": {
+            "name": "Edwin",
+            "description": "a pompous wizard",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "one year of Edwin's services as a wizard",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Kagain's Quest",
+        "objective": "kill the bandits that raided the caravan under Kagain's protection",
+        "description": "Greetings, I'm Kagain.\nI hire mercenaries to escort caravans on route from Amn to Baldur's Gate. Right now I'm lookin' for some strong sword arms, and I'm willing to pay high. It seems that one of the caravans under my protection never arrived at Baldur's Gate, and I need to know what happened. I've been having a lot of problems with bandit activity lately, but they've always only taken the cargo and let the caravan go afterward.\nI'll pay each of you 30 gold per dead bandit, plus a share of any booty, if there's no one left alive to claim it.",
+        "quest_giver": {
+            "name": "Kagain",
+            "description": "an owner of a caravan escort service",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold per dead bandit",
+                "amount": 30
+            },
+            {
+                "name": "",
+                "description": "a share of booty, if there's no one left alive to claim it",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Fahrington's Scroll",
+        "objective": "return Fahrington's scroll of wisdom to him",
+        "description": "I am Fahrington.\nA tasloi has stolen my scroll of wisdom, wanderer, and fled eastward towards the ettercap's lair. The poor tasloi is probably quite dead by now but the ettercaps, of course, will not recognize the scroll's value.\nIf you could retrieve it for me, I promise to brighten your karma.",
+        "quest_giver": {
+            "name": "Fahrington",
+            "description": "a monk",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "Fahrington will brighten the player's karma",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Farmer Brun's Missing Son",
+        "objective": "find Nathan",
+        "description": "I beseech thee, kind soul, please help.\nI'm farmer Brun. It's strange happenings at my farm, and I've not the strength I once had. I've nothing to offer, and even if I did I doubt such as you would have need of it. My son Nathan and his friends went looking for our missing cattle, then they just up and disappeared! Been gone for days now and, with all the bandits around, who knows what's happened. I don't know where they were heading, but I saw some sort o' tracks to the west.\nPlease find Nathan. I can't afford to keep the farm without my son.",
+        "quest_giver": {
+            "name": "Brun",
+            "description": "an old farmer",
+            "location": "Brun's farm"
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "nothing",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Firebead's Scroll",
+        "objective": "bring Firebead Elvenhair's identify scroll to him",
+        "description": "I, Firebead Elvenhair, have a small errand for you.\nI left an identify scroll with Tethtoril, in the inner grounds. He should be done examining it by now, so if you could fetch it for me, I'd be grateful. I have a great use for those types of scrolls.\nAllow me to cast a little spell on you as a reward. It will protect you from any evil you might meet tonight.",
+        "quest_giver": {
+            "name": "Firebead Elvenhair",
+            "description": "a mage",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a protection spell cast by Firebead Elvenhair",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "G'axir the Seer",
+        "objective": "bring a sphene gem to G'axir the Seer",
+        "description": "Your future... is hemmed in darkness.\nYour lives... are in the balance.\nAct wisely, act judiciously... and bring me the sphene gem, should you find it...\nYou... are a light entering darkness.\nYou... are a seeker of truths.\nYou... are more than you realize.\nThe Seer has spoken it because the Seer knows the fear you harbor, the fear you shall yet become.\nIn the lair of the basilisk, you will find a sphene gem... You would do well to bring it to the Seer.",
+        "quest_giver": {
+            "name": "G'axir the Seer",
+            "description": "a seer",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Ghorak the Diseased",
+        "objective": "take Kereph's skull to Agnasia",
+        "description": "For your own health and that of your children, come no closer.\nI, Ghorak, was cursed with this fell disease as punishment for my wickedness... No, your potions and magics are of little use. The only way to cure this sickness is to right the wrongs of the past. Behind a painting at the Three Old Kegs, you will find the skull of my brother, Kereph. Take it to Agnasia in The Lady's Hall. She will know what to do with it.",
+        "quest_giver": {
+            "name": "Ghorak",
+            "description": "a diseased man",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Gurke's Cloak",
+        "objective": "return Gurke's cloak to him",
+        "description": "Old Gurke had his famous cloak stolen right off his back by a batch of paltry tasloi.\nYeah, yeah, it's old news and if you make one crack about the Cloakwood being an appropriate place to lose it, at least, I'll put your liver on the menu. Now move on and let the next people in line have their laugh.\nHowever, if you happen to find my cloak, I'll give you 280 gold pieces for returning it.",
+        "quest_giver": {
+            "name": "Gurke",
+            "description": "an old man who is tired of hearing jokes about losing his cloak in Cloakwood",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold pieces",
+                "amount": 280
+            }
+        ]
+    },
+    {
+        "name": "Half-ogres Near Beregost",
+        "objective": "kill the half-ogres who battled Bjornin",
+        "description": "I'm still healing from my latest encounters. They did quite a number on me, those half-ogres. There's a band of them fortifying themselves in the mountains south-southwest of here...\nIf you could give them a taste of justice by testing your steel against them, that would do me, Bjornin, proud.\nIn an effort to encourage such deeds of righteousness, allow me to present to you this shield as a reward upon your return...",
+        "quest_giver": {
+            "name": "Bjornin",
+            "description": "a paladin",
+            "location": "Beregost"
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a shield",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Hull's Sword",
+        "objective": "fetch Hull's sword",
+        "description": "Hey, kid, it's me, Hull.\nI woke late this morning and left my sword in the barracks before going on duty. If you want to get it for me, it's in the chest at the foot of my bed on the right side of the barracks. Quick now, before the Gatewarden catches me without it.\nYou'll also find an antidote there. I think Dreppin needs one for old Nessa.\nYou'll get 20 gold pieces for saving my skin from the Chief.",
+        "quest_giver": {
+            "name": "Hull",
+            "description": "a guardsman manning the gates",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold pieces",
+                "amount": 20
+            }
+        ]
+    },
+    {
+        "name": "Jared and the Bear",
+        "objective": "kill the bear pursuing Jared",
+        "description": "Oh, thank goodness someone came by.\nI'm Jared. There's a bear on the other side of that bridge, and it's coming this way! I can't run anymore!\nPlease hold it off — I'll give you anything!",
+        "quest_giver": {
+            "name": "Jared",
+            "description": "a man running away from a bear",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "anything",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Joia's Flamedance Ring",
+        "objective": "return Joia's Flamedance Ring to her",
+        "description": "Hey there, you're new here, aren't you? Could I, Joia, trouble you a moment?\nI need someone to go club some heads for me. I was ambushed by a band o' hobgoblins within sight of this inn's walls. Robbed me blind, they did, and I want to return the favor.\nI don't care about most of my things, but I want to get my ring back. My father gave it to me, you understand? The creatures were just north of the inn. Bring my ring back here when you get it. You'll know it when you see it. It's a Flamedance Ring, and very striking.",
+        "quest_giver": {
+            "name": "Joia",
+            "description": "a woman who lost a precious item",
+            "location": "Friendly Arms Inn"
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Joseph's Wife",
+        "objective": "investigate Joseph's fate for his wife",
+        "description": "My husband is missing in the mines. All I know about the mines are that men keep on disappearing in their hellish depths.\nMy husband is one of the miners, but he hasn't been home for weeks. His name is Joseph, and he wears his wedding ring on his left hand. It's a greenstone ring.\nPlease, find him and tell me how he is doing!",
+        "quest_giver": {
+            "name": "",
+            "description": "Joseph's worried wife",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Kylee's Dagger ",
+        "objective": "return Kylee's dagger to its owner",
+        "description": "Are you going to be going down into the mines? If so, could you return this dagger to Kylee?\nHe dropped it when he went into the mine the other day and I haven't seen him since.",
+        "quest_giver": {
+            "name": "",
+            "description": "a miner",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Laerta and Louise",
+        "objective": "get rid of a bogeyman that scares Laerta and Louise every night",
+        "description": "Hi! I'm Laerta. That's my twin sister, Louise.\nMom and Dad don't believe us, but there's a bogeyman that comes and looks in our window every night. We're real glad we're twins because, if there were only one of us, then there'd be no one to hold on to when we get scared. Scare away the bogeyman, would you?\nMom says to give this scroll as a reward. I think it's supposed to protect you from any other bogeypeople you find.",
+        "quest_giver": {
+            "name": "Laerta",
+            "description": "a young girl",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a scroll",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Landrin's Possessions",
+        "objective": "deal with the spider infestation in Landrin's cellar",
+        "description": "Hey, I'm Landrin.\nI've got an infestation of poisonous spiders in my cellar in Beregost. You'll know the house when you see it: just to the west of the Jovial Juggler Inn.\nHere, take these potions with you. They're antidotes against the poison.\nKeep whatever you don't use and I'll give you an extra 120 gold pieces if you bring back my husband's old boots that he keeps down there. If you bring back one of their bodies and my ol' bottle of wine as well, I might toss in a little something extra too.",
+        "quest_giver": {
+            "name": "Landrin",
+            "description": "a woman",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold pieces for fetching Landrin's husband's old boots",
+                "amount": 120
+            },
+            {
+                "name": "",
+                "description": "something extra for bodies of spiders and Landrin's bottle of wine",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Larceny at the Hall of Wonders",
+        "objective": "steal a telescope without hurting anyone, just like Danilo Thann of Waterdeep",
+        "description": "HELLO! SHHH! Shh... ah... um... I mean, hello.\nMight I have but a moment of your, ah, time? I should like to procure your talents for a, ah, unique service, though it's not like you would have to do anything socially untoward. Okay, it's stealing, but it's only the one item: A wondrously curious little toy from distant land. What did they call it? Oh, yes, a \"telescope,\" of all things. It's a misleading name for such an interestingly crafted artifact. \"Golden Extra-Farseer\" would have suited its craftsmanship so much better. The tele-thingy is on display at the Hall of Wonders, and were it in the possession of anyone else it might be purchasable. It's roguery on par with Danilo Thann of Waterdeep, and I don't want anybody hurt.\nI'll pay you well: 500 gold for one night's work. It's better than you could hope for in a year on the docks!",
+        "quest_giver": {
+            "name": "Brevlik",
+            "description": "a discreet man",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold",
+                "amount": 500
+            }
+        ]
+    },
+    {
+        "name": "Marek and Lothander",
+        "objective": "get an antidote before you die of Marek's poison",
+        "description": "I am Lothander.\nI do not wish you harm. My partner, Marek, has poisoned you. While you slept, he slipped a slow-acting magical poison into your food. You have about ten days to live. Common priest spells won't help you. Only one thing can, and that's the antidote. I can help you find it, if you help me first.\nMy problem is this: I don't work for the Iron Throne because I wish to but rather because I have been forced. I have been enspelled with a geas. If I do not obey everything that Marek orders of me the spell will take effect and I shall waste away. I need a way to rid myself of the spell. I know of a diviner at the market square who may have the answers I seek, but I don't have the money to pay him. Will you help me?",
+        "quest_giver": {
+            "name": "Lothander",
+            "description": "Marek's partner in crime",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "an antidote",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Melicamp the Chicken",
+        "objective": "turn Melicamp of Beregost back into a human from a chicken",
+        "description": "Buc-becaw! HELLLLP-becaw! I am \"no ordinary talking chicken,\" and I am in need of your *cluck* help. I am Melicamp of Beregost, a *cluck* mage adept in the mystical arts.\nA... misread... incantation seems to be *cluck* the source of my troubling form. 'Tis been over a month since I *cluck* uttered a polymorph spell, and I simply cannot return to my normal *cluck* form!\nThere is a tower directly to the west of *cluck* Beregost, about which can be found the mage Thalantyr. I am his apprentice, and I am certain he will *cluck* aid me. I'll just nestle in your pack until we get there.",
+        "quest_giver": {
+            "name": "Melicamp of Beregost",
+            "description": "a mage adept in the mystical arts",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Mirianne's Husband",
+        "objective": "tell Mirianne whether you found information about Roe or not",
+        "description": "My husband had to make a sudden business trip to Amn and I'm so worried for him.\n\"Mirianne,\" he always said, \"Mirianne, who knows the road better than old Roe?\" But the highways just aren't as safe as they once were and there hasn't been a messenger from Amn here in months.\nCould you keep your eyes open along the southern roads and let me know if you find anything?",
+        "quest_giver": {
+            "name": "Mirianne",
+            "description": "a concerned wife",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Noralee's Gauntlets",
+        "objective": "bring Noralee's gauntlets to her",
+        "description": "I'm Noralee.\nI just had some new armor shipped in from a far-away city and I'm afraid I must have dropped the gauntlets into one of the shipping crates somewhere between here and the harbor.\nPlease, if you can find them before somebody else picks them up, I would be most grateful.",
+        "quest_giver": {
+            "name": "Noralee",
+            "description": "a female warrior",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Nadine and Euric",
+        "objective": "give Euric a good luck talisman and return to Nadine",
+        "description": "I, Nadine, desperately need someone's help.\nEuric, my youngest son, has run away again... He's always had a touch of the wanderer in him and he knows how to take care of himself, but... Oh, I'm just worried sick. This city gets more dangerous every day... If you find him, could you give him this good luck talisman? I'm sure we'd all sleep a little better.\nLet me give you this necklace as a token of my thanks upon your return. I don't know if it's worth anything but it has been in the family for years.",
+        "quest_giver": {
+            "name": "Nadine",
+            "description": "a worried mother",
+            "location": "Baldur's Gate"
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a necklace",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Ogre Hunting",
+        "objective": "kill ogres",
+        "description": "Hmph. I am Sarhedra and I don't like you.\nI bet you're another one of those adventurers wantin' to change the world or somethin'. Well, go pick on the ogres to the south if it will make you feel better.\nGo find someone else to talk to, I'm no good at this quest stuff. I have... ummm... people to see and places to be.",
+        "quest_giver": {
+            "name": "Sarhedra",
+            "description": "a woman who does not like the player",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Perdue's Short Sword",
+        "objective": "kill the gnoll who stole Perdue's short sword",
+        "description": "Hullo. The name's Perdue.\nThere's a gnoll 'oled up in the hills due west of 'ere, close to the High Hedge. Damn thievin' ball-o-fur stole my short sword two days back. The sword ain't worth the tin she's made from.\nI'll give ya 75 gold pieces just to seal that yappin' mouth of 'is for good.",
+        "quest_giver": {
+            "name": "Perdue",
+            "description": "a man who doesn't like gnolls",
+            "location": "Beregost"
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold pieces",
+                "amount": 75
+            }
+        ]
+    },
+    {
+        "name": "Petrine's Cat",
+        "objective": "bring Angel's angel skin ring to Petrine",
+        "description": "Hi, I'm Petrine and my folks aren't around no more and I ran away from my Uncle Bheren 'cause he's real mean.\nMy cat's really an angel, though, and she protects me when bad things happen. Or at least she did. I can't find her now, though. I think she went back to my uncle's to get her ring. There's this ring that she loves to play with, but when I ran away I had to leave it at my nasty uncle's. If you could just get me the ring, I'm sure Angel would come back.\nCould you do it, oh please?",
+        "quest_giver": {
+            "name": "Petrine",
+            "description": "a young orphan girl",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Phlydia's Book",
+        "objective": "bring \"The History of Halruaa\" back to Phlydia",
+        "description": "Oh, hello! It's me, Phlydia!\nHave you seen my copy of \"The History of Halruaa\" anywhere? You know how I can't stand the constant shuffling of arthritic feet up in the library... So I thought I'd get a bit of fresh air just east of here and... Oh, I hate being so absent-minded! Please, if you find it, I really do need it back.\nIf you do, you can take this little gem of mine. Maybe a merchant will give you a little something for it.",
+        "quest_giver": {
+            "name": "Phlydia",
+            "description": "an absent-minded woman",
+            "location": "outside Candlekeep Inn"
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a little gem",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Prism's Emeralds",
+        "objective": "return 2 emeralds to Oublek",
+        "description": "It's me, Oublek.\nA bit of nonsense from a local artist named Prism. Made off with a couple of emeralds, he did.\nThere is a reward for the return of the gems: a 300 gold bounty.\nPrism's fate is of less importance.",
+        "quest_giver": {
+            "name": "Oublek",
+            "description": "a man who hands out bounties on criminals",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold",
+                "amount": 300
+            }
+        ]
+    },
+    {
+        "name": "Quinn's Friend",
+        "objective": "bring something belonging to Nester to Quinn",
+        "description": "I'm Quinn. There's some ankhegs causin' chaos upriver, alon' the east bank, just north o' that bitch priestess.\nThey took down my pal, Nester, and dang near hauled me under too. 'At's why I'm so glum now. Nester's mama's gonna want somepin' of 'is to bury, but I'm still gettin' too many nightmares and all to go back there.",
+        "quest_giver": {
+            "name": "Quinn",
+            "description": "a man scared of ankhegs",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Killing Rats",
+        "objective": "kill rats",
+        "description": "I thought I asked you to clean the rats out of this building yesterday, already. Hop to it! Get in there!\nAh yes, kill them like the rats that they are! A glorious battle unlike any this world has ever seen...\nI'll give you 5 gp, don't spend it all in one place.",
+        "quest_giver": {
+            "name": "Reevor",
+            "description": "the player's drill instructor",
+            "location": "outside Reevor's storehouse"
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gp",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "name": "Rescuing Dynaheir",
+        "objective": "free Dynaheir from gnolls with Minsc",
+        "description": "Greetings, we are Minsc and Boo. Boo is my faithful hamster companion, and more than he seems.\nWe have traveled far to explore this land, but now my charge Dynaheir has been taken from us. 'Twas gnolls, and once we have tracked them I will beat sense into their heads until they release her.\nAccompany us, and bards will sing the deeds of Minsc and Boo... and friends.\nOnward to the gnoll stronghold in the west!",
+        "quest_giver": {
+            "name": "Minsc",
+            "description": "a noble warrior and Dynaheir's protector",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Returning Dradeel's Spellbook",
+        "objective": "destroy the lycanthropes' lair, and bring Dradeel's spellbook back to its owner",
+        "description": "I am Dradeel, mage and recent convert to the Church of Selûne.\nI was the guide for Balduran's brave adventures to the ends of the world and beyond. The wolf-men are everywhere. The lycanthropes' lair is in Balduran's ship. My spellbook lies within. With it, I am a powerful mage. Without it, I am the pauper that stands before you. With my spellbook retrieved, I may be able to discover a way off of the island.\nIf you go to destroy the lycanthropes' lair, I would ask that you find my book.",
+        "quest_giver": {
+            "name": "Dradeel",
+            "description": "an elven mage who was a guide to Balduran",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a way out of this island",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Safana's Treasure Hunt",
+        "objective": "get Black Alaric's treasure for yourself and Safana",
+        "description": "My name is Safana and I can make you richer than you could imagine.\nI know where the pirate Black Alaric dumped his greatest trove of treasure. Knowing that you are a dynamic and intelligent person, I know you'd want to join me in a venture to get this treasure.\nWell, we should be off then. From what my map showed, the pirate cove is located somewhere along the coast, just south of Candlekeep.",
+        "quest_giver": {
+            "name": "Safana",
+            "description": "a persuasive female adventurer",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "Black Alaric's treasure",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Sam and Lena",
+        "objective": "save Sam from dying",
+        "description": "Please wait a moment, kind traveler! You've got to help me!\nMy name is Lena. You must forgive me for my appearance, but I've been wandering the wilderness for more than a week now.\nMy friend is badly hurt, and he might die if he doesn't get assistance soon. His name is Sam. If you were to take him to Gellana Mirrorshade at the Temple of Wisdom, she'd help him.\nPlease, can you do this?",
+        "quest_giver": {
+            "name": "Lena",
+            "description": "Sam's unkempt female friend",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Samuel the Deserter",
+        "objective": "capture Samuel",
+        "description": "I am a proud member of the Flaming Fist. I've been searching for a deserter. His name is Samuel, and he should be traveling with a woman.\nThere is a bounty of 50 gold for his capture.",
+        "quest_giver": {
+            "name": "",
+            "description": "a member of the Flaming Fist",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold",
+                "amount": 50
+            }
+        ]
+    },
+    {
+        "name": "Searching for Balduran's Helmet",
+        "objective": "bring the Helm of Balduran to Degrodel",
+        "description": "First of all, my name is Degrodel. I have been on the lookout for skilled adventurers. My task is very simple.\nSome years ago, an evil band of mercenaries were all petrified while trying to break into the home of Ramazith. For those of you with a limited vocabulary, petrified means \"turned to stone.\" Anyhow, one of those adventurers had in his possession an item of power: the Helm of Balduran. Ramazith didn't know this at the time and so, after turning them all to stone, he simply sold their bodies to an art collector living in the heart of Baldur's Gate.\nWhat I would like you to do is find these statues, turn them back to flesh, and take the item. I will give you these six scrolls of stone to flesh. Use them on the statues when you find them.\nThe estate can be found just west of the fairgrounds in the center of town. Good luck, and don't entertain any thoughts about betraying me. It could be very hazardous to your health.\nYou will be paid 5,000 gold for this service. This is a kingly sum, so I won't barter with you about the amount.",
+        "quest_giver": {
+            "name": "Degrodel",
+            "description": "a pompous wizard",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold",
+                "amount": 5000
+            }
+        ]
+    },
+    {
+        "name": "Spiders in the Cloakwood",
+        "objective": "investigate what happened to Chelak",
+        "description": "He-hello, travelers. I'm Tiber. Could... could I take up some of your time? I would be very grateful if you would just listen to... if you would just help me!\nIt's my brother, you see. He and I went into the Cloakwood to clear the woods of the spider colony that infests it. I know it sounds foolish... but my brother had found the sword \"Spider's Bane\"! The sword was created to kill spiders... and we thought we could become famous... the heroes of Cloakwood, and all that. But my brother hasn't returned yet... and it's been more than a week.\nPlease, could you go into the woods and find him for me? His name's Chelak. My mother would be so shattered if Chelak were to be dead.",
+        "quest_giver": {
+            "name": "Tiber",
+            "description": "a young, scared man",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Steal Algernon's Cloak",
+        "objective": "bring Algernon's cloak to Pheirkas",
+        "description": "Hmm, I am Pheirkas and I prefer not to work with amateurs.\nThere's a fat man by the name of Algernon staying at Feldepost's Inn in Beregost. He keeps a cloak with him in his room and I need you to get your larcenous hands on it and bring it back to me.\nI assure you that your reward will be handsome.\nTry not to kill him, just filch it off his person.",
+        "quest_giver": {
+            "name": "Pheirkas",
+            "description": "a professional thief",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a handsome reward",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "The Captive Nymph",
+        "objective": "investigate Ragefast and his nymph",
+        "description": "You may call me Lady Hannah. Ragefast! Oh, he makes me seethe! He's a mage on a power trip and what does he do?\nHe acquires his own personal nymph and enslaves her in his quarters! Seek him out and look into this matter immediately! His house is in the northwest part of town.\nI wish you luck and all the passion of my fury in your task.",
+        "quest_giver": {
+            "name": "Lady Hannah",
+            "description": "a noblewoman who is seething because of Ragefast",
+            "location": "the town"
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "A Nymph for Ramazith",
+        "objective": "free Ragefast's nymph and bring her to Ramazith",
+        "description": "Greetings to you and yours, my friend. I'm Ramazith.\nMight I have your ear a moment? My proposition is thus: I would have you enter into the home of a colleague of mine and effect the release of a creature he has imprisoned there. Ragefast be his name, and he has in his possession one of the most beautiful and useful creatures in all of Faerûn. It's a nymph he captured some time ago, and I know not what laughable plans he has for her, but I am sure she be more... productive in my care.\nI not so rich as to be able to offer huge gold, but as competent wizard I do have the odd magical item of worth. Perhaps an enchanted item will serve your needs, no?",
+        "quest_giver": {
+            "name": "Ramazith",
+            "description": "a friendly wizard",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "an enchanted item",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "The Firewine Ruins",
+        "objective": "kill kobolds",
+        "description": "Well met, traveler. Gandolar Luckyfoot, at your disposal.\nIf I might pull on your coattail a moment more, I have a proposition for you. It's usually nature-quiet by the Firewine ruins, even with its violent bygone. Those who died and did not sleep have mostly found their rest over time. It's a live threat that comes now, with a band of kobolds that moved in.\nPerhaps we could prevail upon you to rid us of this menace, and in return, a gift from us you shall receive. Keep whatever you find as well.",
+        "quest_giver": {
+            "name": "Gandolar Luckyfoot",
+            "description": "the jolly mayor of Gullykin",
+            "location": "Gullykin"
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a gift",
+                "amount": 1
+            },
+            {
+                "name": "",
+                "description": "whatever the player finds",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "The Fishermen and the Priestess",
+        "objective": "force the Priestess of the Bitch Queen Umberlee to leave the fishermen alone",
+        "description": "We're being harassed by a Priestess of the Bitch Queen Umberlee. We don't even know why, but whenever we attempt to fish she turns the weather sour. Two of us were washed away just walking to the docks, but we cannot prove to the guard it was her. We be needin' someone to strong-arm her into leaving us alone.\nWe've not much money, but I'll gladly give you a... magical weapon from my grandfather's adventuring days. It's a meager amount for your trouble, but it would be a great service to us.\nWill you help a group of poor fishermen? She hides out near a small shack to the north. Watch yer back and act quickly; she's tricky.",
+        "quest_giver": {
+            "name": "",
+            "description": "fishermen, who are being harassed by the Priestess of the Bitch Queen Umberlee",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a magical weapon",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "The Gibberling Hordes",
+        "objective": "help Laurel to fend off the gibberlings",
+        "description": "I am called Laurel. I am a traveling paladin.\nAh, travelers, this wilderness is too expansive to keep clear of monsters all on my own. Many gibberlings pass through this very spot day and night. Will you stay here and help fend them off?\nFire magics work well against the gibberlings, so if you have such spells, use them.",
+        "quest_giver": {
+            "name": "Laurel",
+            "description": "a traveling paladin",
+            "location": "a spot in the wilderness"
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "The Seven Suns",
+        "objective": "investigate the Seven Suns, and report back to Scar",
+        "description": "First off, let me introduce myself. I'm Scar, second-in-command of the Flaming Fist.\nI need you to begin an investigation of the Seven Suns trading coster. The Seven Suns leadership has been acting strangely of late. They've been selling off valuable assets and neglecting many of their more profitable trading ventures. Considering the importance that the trading coster holds over the economy of the city, the Grand Dukes are noticeably upset. I've gone to talk to the coster's head, Jhasso. He rudely rebuffed me, telling me to mind my own business. I've known Jhasso for many years, and this isn't his usual behavior. I can't start up an official investigation, as there is no real reason for doing so. That's why I need you.\nI want you to break into the Seven Suns compound and find out what's wrong. Use stealth in your investigations; I don't want this operation to cause too much fuss. The most important person to watch for is Jhasso.\nOnce you've found out as much as possible, report back to me at the Flaming Fist compound.\nI'll pay you 2,000 gold for this favor.",
+        "quest_giver": {
+            "name": "Scar",
+            "description": "second-in-command of the Flaming Fist",
+            "location": "the Flaming Fist compound"
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold",
+                "amount": 2000
+            }
+        ]
+    },
+    {
+        "name": "The Silke Dilemma",
+        "objective": "become a bodyguard for Silke Rosena",
+        "description": "Hail, adventurers. I'm Garrick, and I work for Silke Rosena. She's the most skilled musician and actor along the Sword Coast. \nI have a proposal for you. How would you like a well-paying job as a bodyguard for my mistress? She's been having some problems of late. Some thugs have been hired by Feldepost to hurt her bad because she didn't perform at his inn when she was supposed to. You can't blame her for not showing up, what with a villain like Feldepost running the place.\nJust meet me outside of the Red Sheaf Inn, if you are interested in the job.",
+        "quest_giver": {
+            "name": "Garrick",
+            "description": "a man who works for Silke Rosena",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a well-paying job",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Investigate the Nashkel Mines",
+        "objective": "find out what caused miners to go missing and ore to become tainted",
+        "description": "I am Berrun Ghastkill, mayor of Nashkel.\nI need someone to descend into the mines southeast of town and find what has caused our miners to go missing and our ore to become tainted. It won't solve everything, but it's the first step to easing the effects of the iron shortage.\nThe town can give you a reward of 900 gold pieces. We are a small community and that is all we can afford.\nPlease, go now and do what you can.",
+        "quest_giver": {
+            "name": "Berrun Ghastkill",
+            "description": "mayor of Nashkel",
+            "location": "Nashkel"
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold pieces",
+                "amount": 900
+            }
+        ]
+    },
+    {
+        "name": "Tremain's Son",
+        "objective": "bring Casson's body to Tremain Belde'ar",
+        "description": "Greetings to you. I am Lord Priest Tremain Belde'ar, a humble servant of Our Smiling Lady Tymora.\nMy request of you is an odd and very dangerous one. I will not hold you to it if you deem it too extreme. I would have you enter the Water Queen's House and retrieve my son's, Casson's, body. Casson sought to indulge his restless nature by sneaking about the place, and a high price was paid.\nYou must bring Casson's body to me, that I may restore his life to him.",
+        "quest_giver": {
+            "name": "Tremain Belde'ar",
+            "description": "Lord Priest of Tymora",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Vai's Bounty Upon Bandits",
+        "objective": "find out why the bandit raids have been getting worse",
+        "description": "I am Officer Vai of the Flaming Fist and, to be honest, I could use your help.\nThe bandit raids have been getting worse. I used to think that they were just your usual brigands out to make a quick buck in troubled times, but not anymore. They're working for someone... Damn it, this is a fine mess, isn't it?\nI'll pay 50 gold pieces for every bandit scalp you can bring me — and spread the news. I want this whole region cleared, and I want to know what in the Nine Hells is going on here.",
+        "quest_giver": {
+            "name": "Officer Vai",
+            "description": "an officer of the Flaming Fist",
+            "location": "Sword Coast"
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold pieces per bandit scalp",
+                "amount": 50
+            }
+        ]
+    },
+    {
+        "name": "White Wolf Pelts",
+        "objective": "bring a white wolf's pelt to the merchant",
+        "description": "I am but a humble merchant. Interested in a little business on the side, friend?\nI've a man who swears by his grandmother he glimpsed a white wolf up in the Cloudpeak ice fields. It was but a short ways south, and she be easy pickings for a smart sword.\nI'd pay you good money for its pelt, so it's a guaranteed sale if you go.\nKeep it in mind on your travels.",
+        "quest_giver": {
+            "name": "",
+            "description": "merchant",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "good money",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Xvart Raids",
+        "objective": "save Hulrik's cows",
+        "description": "I'm Hulrik! You have to help me!\nThem xvarts are after my cows again! Ever since them xvarts an' their kobold kin swarmed the mines at Nashkel, they've been makin' attacks like that more and more often.",
+        "quest_giver": {
+            "name": "Hulrik",
+            "description": "a farmer",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Zhurlong's Missing Boots",
+        "objective": "return Zhurlong's Boots of Stealth to their owner",
+        "description": "Hey, I'm Zhurlong! What is a thief to do, huh? You invest in some Boots of Stealth, you set up shop in the badlands to the south of Beregost and then, WHAM... Along comes a tribe of hobgoblins and they tear the boots from right off your feet!\nDamn-blasted hobgoblin bullies... I'll pay you 100 gold pieces to show them who's boss and get those boots back...",
+        "quest_giver": {
+            "name": "Zhurlong",
+            "description": "a thief",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold pieces",
+                "amount": 100
+            }
+        ]
+    },
+    {
+        "name": "Zombie Infestation",
+        "objective": "return to Wenric after killing all zombies",
+        "description": "I be Wenric, a farmer by profession.\nThere's been something killing peoples in and 'round the farms here. Zombies or something. I can understands if you can't stomach the task but, just between you an' me real personal-likes, I don't know who else is gonna do it... All of us haves been goin' for a week now without sleep.\nWe've counted twenty zombies or so, so keep track as you kill 'em, if that's what you plans on doing.\nOnce you got 'em all, come back here and I'll gives you the 150 gold pieces that some of us have pooled together.",
+        "quest_giver": {
+            "name": "Wenric",
+            "description": "a farmer",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold pieces",
+                "amount": 150
+            }
+        ]
+    },
+    {
+        "name": "Zordral's Witchhunt",
+        "objective": "save yourself and Bentha from Zordral's wrath",
+        "description": "You there, stay back! If any of you come any closer, I'll kill her. I'm serious. Don't make me do it. All I have to do is say the last word of my spell and she'll die.\nShe's a witch. She'll use her magics to poison the children of this town. She'll butcher the livestock and she'll seduce the young men, make them her puppets. She must be killed!\nAre you mocking me?! No one mocks the great Zordral. You will pay for your insolence!",
+        "quest_giver": {
+            "name": "Zordral",
+            "description": "a psychotic mage",
+            "location": "Bentha's tent"
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "A Tour of Durlag's Tower",
+        "objective": "take a tour to Durlag's Tower",
+        "description": "Step right up folks and HEAR the tale of dread placed before thee. Join with me as I, adventurer extraordinaire Ike Cascadion Vendar, lead yet another group of brave souls through the very SEAT of danger in the realms. To Durlag's Tower we shall go, and witness the perils that have taken the lives of hundreds of courageous men and women.\nSEE the horror of the treacherous traps! FEEL the presence of the long languishing dead! MARVEL at the wondrous wealth buried below! NOT for the weak of spirit as I will NOT be held accountable for any heart failure during OR after our expedition! Step up, step up! One at a TIME!\nA special package deal of 60 gold for you, not that you would need a discount.",
+        "quest_giver": {
+            "name": "Ike Cascadion Vendar",
+            "description": "a showy adventurer and tour guide",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "The Reclusive Scholar",
+        "objective": "travel to Balduran's Island to find Balduran's logbook for Mendas of Waterdeep",
+        "description": "I am Mendas of Waterdeep, quester of small truth in this land. I am in need of favor from you. Can you help a gentle fellow in search for knowledge?\nThe Merchants' League sailors found Balduran's shipwreck on a small island. I wish to recover the ship's logbook. I will solve mystery of Balduran's final voyage. Merchants' League will destroy my artifacts to get treasure. This must not happen! If you help me, I get things precious to me, you get treasure, merchant men get nothing. You will help, yes?\nThese men that find island, they keep the sea charts locked up. In Baldur's Gate, there is building in northeast section of city called Merchants' League Counting House. To find it, just go northeast from Elfsong Tavern. The sea charts, they are in there. Most likely, captain of ship will have them. I don't know such things as chart retrieval, but you are hero, and it is no problem for heroes.\nThere might be small danger, so I give you some gold for the charts.",
+        "quest_giver": {
+            "name": "Mendas of Waterdeep",
+            "description": "a strange scholar",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "treasure",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Delainy's Task",
+        "objective": "bring the cloak to Delainy",
+        "description": "My name is Delainy, and I am pleasured to meet ye. I seek the return of an item, more an icon.\nNo doubt you felt the storm that passed just by and by? Village-home did as well, and the cloak that draped the village center was cast to the wind. I think it is beyond the wall, and will not risk the beasts to get it. Will you?\nI can offer little besides my gratitude. The cloak is a keepsake, a symbol of old times.",
+        "quest_giver": {
+            "name": "Delainy",
+            "description": "a historian",
+            "location": "the village"
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "Delainy's gratitude",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Durlyle's Task",
+        "objective": "bring the cloak that draped the village center back to Durlyle",
+        "description": "I am Durlyle, and I am glad to be meeting. I have but a mundane task to ask of you, if you hear me out?\nThe storm you felt that took your ship? It was fierce here too, and a cloak that draped the village center was cast to the wind. I think it is beyond the wall, and will not risk the beasts to get it. Will you?",
+        "quest_giver": {
+            "name": "Durlyle",
+            "description": "a man",
+            "location": "the village"
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Evalt's Missing Brother",
+        "objective": "find Evan",
+        "description": "I am Evalt, I fish for clan in these savage waters. Listen, outsider, may I ask you for help?\nThere is a witch on this isle. My brother called her the Blue Lady and those of us who ply these waters have all heard her singing at one time or another. My brother, Evan, heard her more than most. I think that he went to find her. I think that he is under her spell. I must go and find him. This witch might kill him. He is strong but he is under her spell. I fear that she will kill him before he realizes what is happening. Can you find my brother?\nI don't know exactly where the Blue Lady is. I have the sense to avoid her, unlike Evan. But I have only heard her singing along the west coast of the island.",
+        "quest_giver": {
+            "name": "Evalt",
+            "description": "fisherman of the clan",
+            "location": "Balduran's Isle"
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Farthing's Dolly",
+        "objective": "return Farthing's doll to her",
+        "description": "My name's Farthing. I'm only five. In a few years my papa will let me hunt. Are you allowed to hunt?\nI've lost my dolly out in the woods. The gatekeeper won't let me go and get it. Can you get it for me?",
+        "quest_giver": {
+            "name": "Farthing",
+            "description": "a 5 year old girl",
+            "location": "the village"
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Galken's Wardstone",
+        "objective": "get the ward token that opens the way to the labyrinths beneath Durlag's Tower from Galken",
+        "description": "I'm Galken. Hey, how'd you like to be supping on fine venison and tippin' back the good stuff?\nI've the key to wealth legendary if you're up for it. No doubt you've heard of the labyrinth at Durlag's Tower, eh? And how she's been pillaged so often that fat nobles go there for picnics? Well, the TOWER has, but BELOW are dungeons untouched! I've a token, a ward token to be sure, that gives entry to them.\n'Tis yours if you'll but settle my tab so I can leave this fine place... with all my limbs intact.",
+        "quest_giver": {
+            "name": "Galken",
+            "description": "a suspicious man",
+            "location": "a bar"
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "ward token",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Jondal's Murder",
+        "objective": "avenge Jondal for Kryla",
+        "description": "Oh, please help me! I'm Kryla. They kill poor Jondal. The wolf-men.\nThey attack us as we search for roots in the forest. Please avenge my Jondal. He was so young...\nThey are this way. Please kill them, I am so frightened.",
+        "quest_giver": {
+            "name": "Kryla",
+            "description": "a frightened woman",
+            "location": "forest"
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Maralee's Child",
+        "objective": "return Peladan to Maralee",
+        "description": "Hello, good people. I am Maralee. Two moons ago my husband took my son out hunting with him. They were attacked by those horrible wolf-creatures. They... they killed my husband and took my baby.\nOthers say that they took the baby away to eat him, but I know he's still alive. He's a beautiful little boy with dark hair like his father. He is three moons old and his name is Peladan.\nThey took him from my husband northeast of the village, in the woods.",
+        "quest_giver": {
+            "name": "Maralee",
+            "description": "a hopeful mother",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Palin and the Monsters",
+        "objective": "save people from monsters",
+        "description": "Good day to you, stranger. I'm called Palin. Excuse my, uhm, abruptness but I would ask your assistance.\nJust east of this place there are monsters. They are attacking a small group of people. Please, if you have hearts, come and help me fight.",
+        "quest_giver": {
+            "name": "Palin",
+            "description": "a fighter",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Recovering \"Soultaker\"",
+        "objective": "bring the \"Soultaker\" to Hurgan Stoneblade",
+        "description": "I am Hurgan Stoneblade, presently residing in Citadel Adbar. Have I got the adventure that'll make ye yearn for glory!\nYe have heard of Durlag's Tower, mayhaps? Me granda' was a good friend of Durlag's. Me granda' was slain by an evil demon but Durlag survived. Durlag kept \"Soultaker\" that had been me granda's. He was going to send it to me mother, but he was betrayed. A sad tale, that.\nAfter Durlag built the tower his family was replaced by doppelgangers. Durlag killed them all but was driven mad by the act. He entrapped his tower heavily and forgot about me granda's dagger.\nIf ye be interested, I wish to hire ye to retrieve me granda's dagger, \"Soultaker,\" me birthright.\nAn enchanted hammer I can offer ye for yer services.",
+        "quest_giver": {
+            "name": "Hurgan Stoneblade",
+            "description": "a man residing in Citadel Adbar",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "an enchanted hammer",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "De'Tranion's Liquor",
+        "objective": "give a jug of this town's hardest liquor to Captain Tollar Kieres",
+        "description": "Ohoy, I'm Captain Tollar Kieres.\nA jug o' this town's hardest liquor would make for a fine departure, if ye'd be so kind.\nOld De'Tranion brews a vile swill at'll do the trick. Ye can find the old coot at the Blushing Mermaid.",
+        "quest_giver": {
+            "name": "Captain Tollar Kieres",
+            "description": "a sea captain",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Therella's Missing Son",
+        "objective": "find out what happened to Dalton",
+        "description": "Greetings, adventurer. I have, or perhaps I should say had, a son named Dalton. He fell in with a crew of adventurers from Waterdeep. Dalton was always obsessed with the idea of being a hero.\nAlas, he has neither the brains nor the ability. Such is a mother's lot in life, however, to watch her children perform acts of idiocy despite her warnings or concerns.\nHe and his thick-skulled cohorts took it upon themselves to plumb the depths of Durlag's Tower. They bought a ward token from that shyster, Galken, and made ready to leave. Though I begged and cried, Dalton still insisted on going. The band never returned. I fear that they were destroyed by the mad dwarf's machinations. That is the tale, sad but true.\nPlease find my son if he still lives.",
+        "quest_giver": {
+            "name": "Therella",
+            "description": "a worried mother",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Magreb and Rilsa",
+        "objective": "avenge Rilsa and give her a proper burial",
+        "description": "Goblins! All I know is they killed Rilsa when she tried to talk to them, and I can't face them by myself. At first they appeared around the house of an old mage, but soon they moved into a set of caves to the northeast, taking him with them.\nForgive me. My name is Magreb. Rilsa and I have watched over this area for years, and we never had any trouble with goblins before. Since they killed her, I've been half out of my mind with grief.\nPlease avenge my Rilsa and give her a proper burial!",
+        "quest_giver": {
+            "name": "Magreb",
+            "description": "a man struck with grief",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "A duel with Shar-Teel Dosan",
+        "objective": "win duel against Shar-Teel Dosan",
+        "description": "Hold, traveler! I, Shar-Teel Dosan, challenge your best warrior to a duel. I don't fight women, so only men should step forward.\nI win, and you give me 20 gold. In the unlikely event that one of you bests me, I'll pledge my sword to your cause, however stupid it may be..\nWill your champion step forward? I only fight men, so your women will have to be satisfied with just watching. Don't entertain any thoughts about cheating. If any of the rest of you try to interfere in this fight, I'll kill them outright.",
+        "quest_giver": {
+            "name": "Shar-Teel Dosan",
+            "description": "a man-hating warrior woman",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "Shar-Teel Dosan joins the player's party",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "An Offer from Taerom",
+        "objective": "sell your ankheg shells",
+        "description": "Hello there, I'm Taerom Fuiruim, a blacksmith of some renown.\nAn interesting piece o' material you got there. Ankheg, if I'm not mistaken. Been a while since I seen the like, but if I remember correctly, it makes a fine set of armor. If properly treated it's comparable to full plate with half the weight!\nIf you're willing to part with your shells I'll give you 500 gold for the lot of them. No more can I offer with business as slow as it is.\nIron shortage hurting us all.",
+        "quest_giver": {
+            "name": "Taerom Fuiruim",
+            "description": "a famous blacksmith",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold",
+                "amount": 500
+            }
+        ]
+    },
+    {
+        "name": "The Tale of Commander Brage",
+        "objective": "kill Commander Brage",
+        "description": "State your business with the guard and go! Oh, that came out a bit harsher than I meant. I am sorry for my mood. All the guard are still grieving the loss of Commander Brage.\nThe commander was friend to many before he found a cursed sword. He's not the man he was, by Helm. I'll not believe a man of Brage's rank could kill his own family. 'Twas evil magics of some sort. An entire unit went west after Brage to try to talk some sense to him. It's been a week, and none have returned.\nThe reward for the commander's head is a king's ransom, but I'll not be lifting MY sword against a brother soldier.\nTravel lightly, wanderer. The woods harbor strange things.",
+        "quest_giver": {
+            "name": "",
+            "description": "a guard in a bad mood",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "a king's ransom",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Coran the Wyvern Hunter",
+        "objective": "bring the wyvern's head to the mayor of Beregost",
+        "description": "It's refreshing to find other people in this wood. I am Coran, thief and archer!\nI've been alone in the wilderness for far too long. I wouldn't mind returning to the big city, but I have yet to collect my bounty. I'd share the reward with the lot of you if you would help hasten the hunt.\nThe deal is this: I've been hired out by the mayor of Beregost to hunt down a great winged dragon that's been plaguing the caravan routes. He's offered 2,000 gold for its head. Now before you get cold feet, let me allay your fears. The only descriptions of the beast have always mentioned its deadly barbed tail. From what I know about dragons they don't have barbs on their tails — that's something unique to wyverns. So all we have to do is find this wyvern's nest and kill it. Our only worries are if it has friends over for dinner!\nWe shouldn't tarry any longer; let's collect the head of this soon-to-be-sorry wyvern.",
+        "quest_giver": {
+            "name": "Coran",
+            "description": "a suave thief and archer",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold",
+                "amount": 2000
+            }
+        ]
+    },
+    {
+        "name": "Eldoth and Skie",
+        "objective": "capture Skie with Eldoth",
+        "description": "I'm Eldoth, a traveling bard. Pleased to make your acquaintance. You look like the type to be on the outlook for ways to improve the quality of your life.\nWell, I have a proposal that could help you in that endeavor. You see, there's a girl, my lover in fact, who desires to escape her father and live on her own. Her father is Entar Silvershield, one of the dukes of Baldur's Gate. This, of course, makes her desires more difficult than that of the average city girl.\nHowever, with your assistance, we could help her escape the tyrannical clutches of Entar. Here's the punchline: Since Entar's going to be hunting us anyway, we can blackmail him for hoards of cash and not worry about our captive escaping. After all, we're doing it all for the sake of Skie.\nNow, we needn't go about this right away. In fact, I'll help you with whatever you're doing until you decide to head up to Baldur's Gate. Just think of it as one favor deserving another.",
+        "quest_giver": {
+            "name": "Eldoth",
+            "description": "a traveling bard",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "hoards of blackmail cash from Entar Silvershield",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Ludrug's Band",
+        "objective": "win the duel against Ludrug",
+        "description": "Stop! You have trespassed on our territory. You shall not be allowed to leave until you have paid tribute. We demand 50 gold in tribute!\nNo money? That is too bad for you. We let you go only if you win fight. Your best champion versus our best champion. Our best champion is Ludrug. Ludrug is me. Are you ready for fight? No matter, we fight now!\nIf you lose, you must die! If you win, we must let you pass! Tread carefully, we will be watching you.",
+        "quest_giver": {
+            "name": "Ludrug",
+            "description": "a gnoll",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gnolls let the player pass",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Missing Citizens",
+        "objective": "discover what's been happening with the disappearing citizens, and come see Scar",
+        "description": "It is I, Scar, second-in-command of the Flaming Fist. I have another job you might be interested in. You'll be well paid for your services.\nThe problem is this: Every night people have been disappearing from the streets of the city. My men have been scouring the city trying to find the culprit, but so far to no avail. People have begun to get scared, and very few are willing to leave their homes at night. Something has to be done, and quickly. Would you be willing to take the job? I'd pay you 300 gold in advance with a 1,000 gold bonus if you discover what's been happening with the disappearing citizens.\nYour job is really simple. All I want you to do is patrol the east of the city and find an entrance to the sewers. Perhaps you'll get lucky and find out what's been happening. If you do find out what's been happening, come to see me at the Flaming Fist barracks. Our only clue so far has led us to the sewers, so if you want to explore them first, it would probably be a good idea. Also, we've found tracks of some many-legged creature, perhaps a centipede-like monster.",
+        "quest_giver": {
+            "name": "Scar",
+            "description": "second-in-command of the Flaming Fist",
+            "location": "the Flaming Fist barracks"
+        },
+        "reward": [
+            {
+                "name": "",
+                "description": "gold in advance",
+                "amount": 300
+            },
+            {
+                "name": "",
+                "description": "gold bonus",
+                "amount": 1000
+            }
+        ]
+    },
+    {
+        "name": "Aldeth and the Group of Savages",
+        "objective": "protect Aldeth Sashenstar and his friends from a group of savages",
+        "description": "I am Aldeth Sashenstar. You must understand that at the moment, I'm under a terrible amount of stress.\nYou see, my dear friend, there is a group of uncouth savages that has declared their intention of killing my friends and me. I've been holed up in this cabin for several days and have lacked the wherewithal to try to make an escape.\nMy friends and I come here every year to do some sport hunting. This year however, a group of woodland savages threatened us with bodily harm if we did not stop our hunting trip. Being civilized men, we realized that it's well within our rights to hunt where we damn well please. After a few more days of hunting, the crass woodmen lost all pretense of humanity and murdered Elban, one of my oldest friends.\nI'm sure that they plan to attack our cottage here, so we had best be prepared.",
+        "quest_giver": {
+            "name": "Aldeth Sashenstar",
+            "description": "a nobleman",
+            "location": "a cabin"
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Investigating the Merchants' League Estate",
+        "objective": "investigate Irlentree and Zorl Miyar, and report back to Aldeth Sashenstar",
+        "description": "It is so pleasant to see your face once again. Don't you recognize me? It is I, Aldeth Sashenstar. I am so glad to have met you, especially at a time like this. I need to speak with you privately.\nI'm sorry for all of this hiding and skulking, but there are dire events afoot. You know that I am one of the principal shareholders of the Merchants' League. Well, I share ownership of the company with two others: Irlentree and Zorl Miyar, two very distinguished gentlemen. When I returned from my hunting trip — thanks to you, I might add — I found that my two partners had undergone some profound changes, nothing physical or overt, but something far more sinister.\nIt's as if my partners had become wholly different people while I was gone. They almost take an active interest in squandering our company's resources on frivolous and stupid ideas. If they continue on this course, the company will be in shambles in but a few weeks. I know you have already helped me once, but I ask for your assistance again. I have no other recourse.\nCome into the Merchants' League Estate with me. I will explain that you are an old friend of mine and will quarter you in the guest chambers. From there, please investigate my partners, perhaps using magic or any of the other skills you possess. Learn as much as you can during your visit and then report back to me after you're done. It should only take a couple of days.",
+        "quest_giver": {
+            "name": "Aldeth Sashenstar",
+            "description": "one of the principal shareholders of the Merchants' League",
+            "location": ""
+        },
+        "reward": [
+            {
+                "name": "NONE",
+                "description": "",
+                "amount": 1
+            }
+        ]
+    }
+]
