@@ -42,6 +42,7 @@ class Warrior(Player):
     Attributes:
         classname (str): Name of the class
         classdesc (str): Description of the class
+        chosen (boolean): Warrior is able to pick up the greatsword of Nerus
     """
 
     def __init__(self, name: str = "", inventory: List[Item] | None = None,
@@ -50,3 +51,4 @@ class Warrior(Player):
         super().__init__(name, inventory, hp, mana, location)
         self.classname = "Warrior"
         self.classdesc = "A young warrior from Miru, inspired by their older brother’s military experience, who wants to become strong enough to swing their own sword and defend their family and community from the Qayral."
+        self.chosen = False
