@@ -52,9 +52,9 @@ class Location:
         self.name = name
         self.desc = desc
         self.block = block
-        self.npcs = npcs
-        self.items = [] #holds items present at location
+        self.npcs = npcs if npcs is not None else []
         self.directions = directions
+        self.items = []  # list of items at location
 
     def display(self):
         """Outputs infomation of the Location for the Player"""
@@ -107,3 +107,11 @@ class Location:
             return self.directions[idx]
 
         return -1
+
+    def add_npc(self, npc: Npc) -> None:
+        """Adds Npc to Location
+
+        Parameters:
+            npc (Npc): character
+        """
+        self.npcs.append(npc)

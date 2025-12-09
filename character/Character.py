@@ -19,3 +19,8 @@ class Character:
         self.inventory = inventory
         self.hp = hp
         self.mana = mana
+        self.is_alive = True
+
+    def add_item(self, item: Item) -> None:
+        """Add item to inventory of character"""
+        self.inventory.append(item)

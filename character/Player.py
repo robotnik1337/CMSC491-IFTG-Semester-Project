@@ -1,6 +1,7 @@
 from typing import List
-from character.Character import Character, Item
+from character.Character import Character
 from location.Location import Location
+from item.Item import Item
 
 
 class Player(Character):

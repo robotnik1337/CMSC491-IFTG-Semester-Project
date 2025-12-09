@@ -1,4 +1,5 @@
 from character.Player import Player, Warrior, Mage
+from character.Npc import Npc
 from location.Location import Location
 from typing import Dict
 
@@ -41,6 +42,23 @@ def load_map() -> Dict[int, Location]:
     return map
 
 
+def load_npc(map: Dict[int, Location]) -> None:
+    """Loads in all NPCs and places them in their Locations
+
+    Parameters:
+        map (Dict[int, Location]): Game map, key: id, value: location
+    """
+    with open("utils/491_npc.txt", "r") as f:
+        lines = f.read().splitlines()
+        for line in lines:
+            chunks = [chunk.strip() for chunk in line.split('|')]
+            name = chunks[0]
+            loc_id = int(chunks[1])
+            desc = chunks[2]
+            npc = Npc(name=name, desc=desc)
+            map[loc_id].add_npc(npc)  # Add loaded Npc into current Location
+
+
 def pick_class(map: Dict[int, Location]) -> Player:
     """Character creation
 
@@ -61,6 +79,19 @@ def pick_class(map: Dict[int, Location]) -> Player:
         return Warrior(name=name, location=map[1])
     else:
         return Mage(name=name, location=map[6])
+
+
+def display_cmds(menu: str = "Available Commands:") -> None:
+    """Displays information about actions and other commands
+
+    Parameters:
+        menu (str): Menu Name
+    """
+    print("\n\n")
+    print(menu)
+    print(" - go <direction>\t-> travel to another location")
+    print(" - quit or q\t-> quit the game")
+    print("")
 
 
 def parser(line: str) -> str:
