@@ -52,7 +52,7 @@ class Location:
         self.name = name
         self.desc = desc
         self.block = block
-        self.npcs = npcs
+        self.npcs = npcs if npcs is not None else []
         self.directions = directions
 
     def display(self):
@@ -106,3 +106,11 @@ class Location:
             return self.directions[idx]
 
         return -1
+
+    def add_npc(self, npc: Npc) -> None:
+        """Adds Npc to Location
+
+        Parameters:
+            npc (Npc): character
+        """
+        self.npcs.append(npc)
