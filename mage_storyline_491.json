@@ -1,0 +1,114 @@
+[{
+    "name": "New Staff I",
+    "objective": "Meet with Grand Mage Archilus to complete daily training",
+    "first_tasks": ["meet with Grand Mage Archilus"],
+    "first_task_locations": [{
+        "name": "Ashen",
+        "description": "A town in the snowy hills, home to the well-renowned Magic Academy. This town is a hub for mystical arts, where the novice and best sorcerers, alchemists, and more come to learn and exchange knowledge."
+    }],
+    "quest_giver": {
+        "name": "",
+        "description": "Mage's starting quest",
+        "location": "Ashen"
+    }
+},
+{
+    "name": "New Staff II",
+    "objective": "Acquire a special magical stone to use for your new staff",
+    "first_tasks": ["defeat an evil imp"],
+    "first_task_locations": [{
+        "name": "Wycan Forest",
+        "description": "This forest is always dark, surrounded by a deep cloud of mist. Some of the people who’ve entered this forest never returned or went insane. Those with strong acumen can withstand whatever magic this forest entails."
+    }],
+    "quest_giver": {
+        "name": "Grand Mage Archilus",
+        "description": "One of the superintendent of the well-renowned Magic Academy, a highly-esteemed academy for magic arts. He has been studying magic for several decades, an excellent master of his craft.",
+        "location": "Ashen"
+    },
+    "items": [{
+        "name": "Ovin's Stone",
+        "description": "a magical stone imbued with the power of Ovin, one of the past celestials who, in folklore, was deemed responsible for the curse of the Wycan Forest.",
+        "amount": 1
+    }],
+    "enemies": [{
+        "name": "Evil Imp",
+        "description": "A demonic imp that roams Wycan Forest. It yearns to consume the unfortunate souls that explore this forest.",
+        "amount": 1
+    }]
+},
+{
+    "name": "New Staff III",
+    "objective": "Acquire a special bark to use for your new staff",
+    "first_tasks": ["find the special tree"],
+    "first_task_locations": [{
+        "name": "Sierran Woodlands",
+        "description": "A dense forest, covered in snow and trees of all kinds and shapes. Some say these trees hold magical energy that can be used to heal, curse, and much more."
+    }],
+    "quest_giver": {
+        "name": "Grand Mage Archilus",
+        "description": "One of the superintendent of the well-renowned Magic Academy, a highly-esteemed academy for magic arts. He has been studying magic for several decades, an excellent master of his craft.",
+        "location": "Ashen"
+    },
+    "items": [{
+        "name": "Bark of Agbara",
+        "description": "A bark of the celestial tree Agbara, imbued with the celestial Simi’s power.",
+        "amount": 1
+    }]
+}, 
+{
+    "name": "New Staff IV",
+    "objective": "Return back to Grand Mage Archilus with Ovin's Stone and bark of Agbara to craft your new staff",
+    "first_tasks": ["meet with Grand Mage Archilus"],
+    "first_task_locations": [{
+        "name": "Ashen",
+        "description": "A town in the snowy hills, home to the well-renowned Magic Academy. This town is a hub for mystical arts, where the novice and best sorcerers, alchemists, and more come to learn and exchange knowledge."
+    }],
+    "quest_giver": {
+        "name": "Grand Mage Archilus",
+        "description": "One of the superintendent of the well-renowned Magic Academy, a highly-esteemed academy for magic arts. He has been studying magic for several decades, an excellent master of his craft.",
+        "location": "Ashen"
+    },
+    "reward": [{
+        "name": "Enchanted Staff",
+        "description": "A long staff with Ovin’s stone beaming at the top. One can feel an immense power radiating from the staff.",
+        "amount": 1
+    }]
+},
+{
+    "name": "Supreme I",
+    "objective": "talk to Grand Mage Archilus to learn about how to get stronger",
+    "first_tasks": ["head to Elria"],
+    "first_task_locations": [{
+        "name": "Elria",
+        "description": "A beautiful, prosperous, and grand city, home to many of the mystic and physical arts. Its tall, white and gold structure beams elegance and sophistication. The city is a bustling economic hub, diverse, and well fortified."
+    }],
+    "quest_giver": {
+        "name": "Grand Mage Archilus",
+        "description": "One of the superintendent of the well-renowned Magic Academy, a highly-esteemed academy for magic arts. He has been studying magic for several decades, an excellent master of his craft.",
+        "location": "Ashen"
+    },
+    "characters": [{
+        "name": "Old Mage Supreme Sotek",
+        "description": "One of the old Mage Supremes, an immensely powerful mage that mastered all of the elemental forces. Sotek stays to himself in the city of Elria, crafting potions from time to time to make money.",
+        "location": "Elria"
+    }]
+},
+{
+    "name": "Supreme II",
+    "objective": "Find the mysterious old mage",
+    "first_tasks": ["fight the Old Mage Supreme Sotek"],
+    "first_task_locations": [{
+        "name": "Elria",
+        "description": "A beautiful, prosperous, and grand city, home to many of the mystic and physical arts. Its tall, white and gold structure beams elegance and sophistication. The city is a bustling economic hub, diverse, and well fortified."
+    }],
+    "quest_giver": {
+        "name": "Old Mage Supreme Sotek",
+        "description": "One of the old Mage Supremes, an immensely powerful mage that mastered all of the elemental forces. Sotek stays to himself in the city of Elria, crafting potions from time to time to make money.",
+        "location": "Elria"
+    },
+    "enemies": [{
+        "name": "Old Mage Supreme Sotek",
+        "description": "One of the old Mage Supremes, an immensely powerful mage that mastered all of the elemental forces. Sotek stays to himself in the city of Elria, crafting potions from time to time to make money.",
+        "amount": 1
+    }]
+}]
