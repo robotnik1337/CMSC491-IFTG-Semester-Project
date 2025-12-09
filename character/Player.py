@@ -25,6 +25,7 @@ class Mage(Player):
 
     Attributes:
         classname (str): Name of the class
+        classdesc (str): Description of the class
     """
 
     def __init__(self, name: str = "", inventory: List[Item] | None = None,
@@ -32,6 +33,7 @@ class Mage(Player):
                  location: Location | None = None) -> None:
         super().__init__(name, inventory, hp, mana, location)
         self.classname = "Mage"
+        self.classdesc = "A young mage from Ashen who desires to become one of the greatest mages to exist, a Mage Supreme. After the death of their father due to the evil that surrounds Ashen, they seek to gain more power to protect themselves and their loved ones."
 
 
 class Warrior(Player):
@@ -39,6 +41,7 @@ class Warrior(Player):
 
     Attributes:
         classname (str): Name of the class
+        classdesc (str): Description of the class
     """
 
     def __init__(self, name: str = "", inventory: List[Item] | None = None,
@@ -46,3 +49,4 @@ class Warrior(Player):
                  location: Location | None = None) -> None:
         super().__init__(name, inventory, hp, mana, location)
         self.classname = "Warrior"
+        self.classdesc = "A young warrior from Miru, inspired by their older brother’s military experience, who wants to become strong enough to swing their own sword and defend their family and community from the Qayral."
