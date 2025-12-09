@@ -45,7 +45,7 @@ class Location:
 
     def __init__(self, id: int = DEF_ID, name: str = DEF_NAME,
                  desc: str = DEF_DESC, block: Block | None = None,
-                 npcs: List[Npc] | None = [],
+                 npcs: List[Npc] | None = None,
                  directions: List[int] = DEF_DIRECTIONS):
         """Initializes Location"""
         self.id = id
