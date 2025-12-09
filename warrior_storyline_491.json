@@ -1,0 +1,119 @@
+[{
+    "name": "Defend Miru I",
+    "objective": "Meet with Lieutenant Omar at the Military Base",
+    "first_tasks": ["meet with Lieutenant Omar"],
+    "first_task_locations": [{
+        "name": "Military Base",
+        "description": "One of Miru’s military bases, where training and preparation towards destroying the Qayral and defending Miru takes place."
+    }],
+    "quest_giver": {
+        "name": "",
+        "description": "Warrior's starting quest",
+        "location": ""
+    }
+},
+{
+    "name": "Defend Miru II",
+    "objective": "Train with Lieutenant Omar to prepare for the Qayral",
+    "first_tasks": ["train with Lieutenant Omar"],
+    "first_task_locations": [{
+        "name": "Military Base",
+        "description": "One of Miru’s military bases, where training and preparation towards destroying the Qayral and defending Miru takes place."
+    }],
+    "quest_giver": {
+        "name": "Lieutenant Omar",
+        "description": "an experienced militant who holds allegiance to defending Miru and protecting its people from the Qayral and other dangers. He leads an army of 200, training and preparing for battle.",
+        "location": "Military Base"
+    },
+    "reward": [{
+        "name": "Military Sword",
+        "description": "A strong sword used by Miru militants",
+        "amount": 1
+    }]
+},
+{
+    "name": "Defend Miru III",
+    "objective": "Defeat the Qayral near Miru",
+    "first_tasks": ["Defeat Qayral"],
+    "first_task_locations": [{
+        "name": "Jinn's Lair",
+        "description": "A dark cave teeming with bloodlusted Qayral. There seems to be some dark energy emanating from the cave."
+    }],
+    "quest_giver": {
+        "name": "Lieutenant Omar",
+        "description": "an experienced militant who holds allegiance to defending Miru and protecting its people from the Qayral and other dangers. He leads an army of 200, training and preparing for battle.",
+        "location": "Military Base"
+    },
+    "items": [{
+        "name": "Qayral's Scale",
+        "description": "A shiny scale from the skin of a Qayral. There seems to be something radiating from it, making one feel very uneasy. Only those that have special abilities are able to get this scale of a Qayral.",
+        "amount": 1
+    }],
+    "enemies": [{
+        "name": "Qayral",
+        "description": "Large, reptilian beasts that live in Jinn’s Lair. They target the people of Miru constantly, hoping to break into it and devour the people there.",
+        "amount": 1
+    }]
+}, 
+{
+    "name": "Defend Miru IIII",
+    "objective": "Report back to Lieutenant Omar your findings",
+    "first_tasks": ["Report back to Lietenant Omar"],
+    "first_task_locations": [{
+        "name": "Military Base",
+        "description": "One of Miru’s military bases, where training and preparation towards destroying the Qayral and defending Miru takes place."
+    }],
+    "quest_giver": {
+        "name": "",
+        "description": "Given immediately after acquiring a Qayral Scale",
+        "location": "Jinn's Lair"
+    },
+    "items": [{
+        "name": "Qayral's Scale",
+        "description": "A shiny scale from the skin of a Qayral. There seems to be something radiating from it, making one feel very uneasy. Only those that have special abilities are able to get this scale of a Qayral.",
+        "amount": 1
+    }],
+    "enemies": [{
+        "name": "Qayral",
+        "description": "Large, reptilian beasts that live in Jinn’s Lair. They target the people of Miru constantly, hoping to break into it and devour the people there.",
+        "amount": 1
+    }]
+},
+{
+    "name": "Chosen One I",
+    "objective": "talk to Lieutenant Omar to learn about the Greatsword of Nerus",
+    "first_tasks": ["head to Elria"],
+    "first_task_locations": [{
+        "name": "Elria",
+        "description": "A beautiful, prosperous, and grand city, home to many of the mystic and physical arts. Its tall, white and gold structure beams elegance and sophistication. The city is a bustling economic hub, diverse, and well fortified."
+    }],
+    "quest_giver": {
+        "name": "Lieutenant Omar",
+        "description": "an experienced militant who holds allegiance to defending Miru and protecting its people from the Qayral and other dangers. He leads an army of 200, training and preparing for battle.",
+        "location": "Military Base"
+    },
+    "items": [{
+        "name": "Greatsword of Nerus",
+        "description": "A greatsword stuck in an engraved stone in Elria. This greatsword was used by the great Swordsman Nerus, one of the strongest warriors to have ever existed. Only those who are chosen can release this greatsword from the stone.",
+        "amount": 1
+    }]
+},
+{
+    "name": "Chosen One II",
+    "objective": "Try to pick up Greatsword of Nerus",
+    "first_tasks": ["pick up the Greatsword of Nerus"],
+    "first_task_locations": [{
+        "name": "Elria",
+        "description": "A beautiful, prosperous, and grand city, home to many of the mystic and physical arts. Its tall, white and gold structure beams elegance and sophistication. The city is a bustling economic hub, diverse, and well fortified."
+    }],
+    "quest_giver": {
+        "name": "Lieutenant Omar",
+        "description": "an experienced militant who holds allegiance to defending Miru and protecting its people from the Qayral and other dangers. He leads an army of 200, training and preparing for battle.",
+        "location": "Military Base"
+    },
+    "items": [{
+        "name": "Greatsword of Nerus",
+        "description": "A greatsword stuck in an engraved stone in Elria. This greatsword was used by the great Swordsman Nerus, one of the strongest warriors to have ever existed. Only those who are chosen can release this greatsword from the stone.",
+        "amount": 1
+    }]
+}]
