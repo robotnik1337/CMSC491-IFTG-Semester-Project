@@ -54,6 +54,7 @@ class Location:
         self.block = block
         self.npcs = npcs if npcs is not None else []
         self.directions = directions
+        self.items = []  # list of items at location
 
     def display(self):
         """Outputs infomation of the Location for the Player"""
