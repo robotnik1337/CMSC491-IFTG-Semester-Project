@@ -1,6 +1,6 @@
 import openai
 
-def generate_dialogue(quest, player):
+def generate_dialogue(quest, player, npc):
   """
   Uses a fine-tuned OpenAI model to generate dialogue for a NPC based on the current quest information and player information
 
@@ -46,8 +46,9 @@ def generate_dialogue(quest, player):
   ft_model = "ft:gpt-4.1-nano-2025-04-14:personal::CkcA27cd"
   response = client.completions.create(
       model=ft_model,
-      prompt="Given this quest information, generate dialogue for {quest_giver} speaking to the player {player_name}.\nPlayer's description is: {player_class}: {desc}\n".format(
-          quest_giver=test_quest_json['quest_giver']['name'],
+      prompt="Given this quest information, generate dialogue for {npc} speaking to the player {player_name}.\nPlayer's description is: {player_class}: {desc}\n{npc}'s description is: {npc_desc}\n".format(
+          npc=npc.name,
+          npc_desc=npc.description,
           player_name=player.name,
           player_class=player.classname,
           desc=player.classdesc),
