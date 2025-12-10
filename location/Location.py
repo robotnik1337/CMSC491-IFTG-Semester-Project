@@ -1,6 +1,7 @@
 from typing import List
 from block.Block import Block
 from character.Npc import Npc
+from item.Item import Item
 
 # Default Values
 
@@ -46,7 +47,8 @@ class Location:
     def __init__(self, id: int = DEF_ID, name: str = DEF_NAME,
                  desc: str = DEF_DESC, block: Block | None = None,
                  npcs: List[Npc] | None = None,
-                 directions: List[int] = DEF_DIRECTIONS):
+                 directions: List[int] = DEF_DIRECTIONS,
+                 items: List[Item] | None = None):
         """Initializes Location"""
         self.id = id
         self.name = name
@@ -54,7 +56,7 @@ class Location:
         self.block = block
         self.npcs = npcs if npcs is not None else []
         self.directions = directions
-        self.items = []  # list of items at location
+        self.items = items if items is not None else []
 
     def display(self):
         """Outputs infomation of the Location for the Player"""
@@ -115,3 +117,11 @@ class Location:
             npc (Npc): character
         """
         self.npcs.append(npc)
+
+    def add_item(self, item: Item) -> None:
+        """Adds Item to Location
+
+        Parameters:
+            item (Item): item
+        """
+        self.items.append(item)
