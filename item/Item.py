@@ -18,10 +18,12 @@ class Weapon(Item):
     """
 
     def __init__(self, name: str = "", description: str = "", gettable: bool = None,
-                 damage: int = 0, mana_cost: int = 0) -> None:
+                 damage: int = 0, mana_cost: int = 0, is_powerful: bool = False) -> None:
         super().__init__(name, description)
         self.damage = damage
         self.mana_cost = mana_cost
+        self.is_powerful = is_powerful
+
 
 
 
