@@ -17,7 +17,7 @@ if __name__ == "__main__":
     choice = None
 
     while (True):
-        choice = input()
+        choice = input("> ")
         cmd, noun = parser(choice)
         print(f"cmd: {cmd}, noun: {noun}\n\n")
         if cmd == "go" and noun is not None:
