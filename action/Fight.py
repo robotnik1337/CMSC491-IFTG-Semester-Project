@@ -7,6 +7,7 @@ from typing import Dict
 SUCCESS = "Fought and won against "
 FAILURE = "Fought and lost against "
 DAMAGE = "Took 10 damage!"
+POWERFUL_DAMAGE = "Took 20 damage!"
 UNABLE = "Cannot fight "
 
 
@@ -41,20 +42,47 @@ class Fight(Action):
 
     def execute(self) -> None:
         """Fight the targeted NPC"""
+    
         if self.can_execute():
-            #simple fight, if user has weapon, they win, very simple
-            if self.player.inventory is not None:
-                for item in self.player.inventory:
-                    if type(item).__name__ == "Weapon":
-                        
-                        #remove npc from location
-                        for item in self.enemy_npc.inventory:
-                            self.player.inventory.append(item)
-                        self.current_loc.remove_npc(self.enemy_npc)
-                        self.display_result(SUCCESS + self.enemy_npc.name)
-                        return
-            self.display_result(FAILURE + self.enemy_npc.name)
-            self.display_result(DAMAGE)
-            self.player.hp -= 10
+            weapon = False
+            powerful_weapon = False
+            for item in self.player.inventory:
+                if type(item).__name__ == "Weapon":
+                    weapon = True
+                    if item.is_powerful:
+                        powerful_weapon = True
+            if self.enemy_npc.name == "Qayral":
+                if powerful_weapon:
+                    #remove npc from location
+                    for item in self.enemy_npc.inventory:
+                        self.player.inventory.append(item)
+                    self.current_loc.remove_npc(self.enemy_npc)
+                    self.display_result(SUCCESS + self.enemy_npc.name)
+                else:
+                    self.display_result(FAILURE + self.enemy_npc.name)
+                    self.display_result(POWERFUL_DAMAGE)
+                    self.player.hp -= 20
+            elif self.enemy_npc.name == "Grand Mage Archilus":
+                if powerful_weapon:
+                    #remove npc from location
+                    for item in self.enemy_npc.inventory:
+                        self.player.inventory.append(item)
+                    self.current_loc.remove_npc(self.enemy_npc)
+                    self.display_result(SUCCESS + self.enemy_npc.name)
+                else:
+                    self.display_result(FAILURE + self.enemy_npc.name)
+                    self.display_result(POWERFUL_DAMAGE)
+                    self.player.hp -= 20
+            else:
+                if weapon:
+                    #remove npc from location
+                    for item in self.enemy_npc.inventory:
+                        self.player.inventory.append(item)
+                    self.current_loc.remove_npc(self.enemy_npc)
+                    self.display_result(SUCCESS + self.enemy_npc.name)
+                else:
+                    self.display_result(FAILURE + self.enemy_npc.name)
+                    self.display_result(DAMAGE)
+                    self.player.hp -= 10
         else:
             self.display_result(UNABLE +self.enemy_npc.name)

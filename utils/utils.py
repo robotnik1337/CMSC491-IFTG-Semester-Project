@@ -26,8 +26,8 @@ def load_map() -> Dict[int, Location]:
                 loc.add_item(item)
             elif id == 4:
                 # Special case, sword in this location
-                item = Item(name="Greatsword of Nerus",
-                            description="Stuck in an engraved stone, there was a greatsword was used by the great Swordsman Nerus. One of the strongest warriors to have ever existed. Many have tried to pull the sword to no avail.")
+                item = Weapon(name="Greatsword of Nerus",
+                            description="Stuck in an engraved stone, there was a greatsword was used by the great Swordsman Nerus. One of the strongest warriors to have ever existed. Many have tried to pull the sword to no avail.", is_powerful = True)
                 loc.add_item(item)
             map[loc.id] = loc
     return map
@@ -66,13 +66,13 @@ def load_items(npc_list: Dict[str, Npc]) -> None:
             item = Item(name="Ovin's Stone", description="a magical stone imbued with the power of Ovin, one of the past celestials who, in folklore, was deemed responsible for the curse of the Wycan Forest.")
             npc.add_item(item)
         if npc.name == "Grand Mage Archilus":
-            item = Item(name="Enchanted Staff", description = "A long staff with Ovin’s stone beaming at the top. One can feel an immense power radiating from the staff.")
+            item = Weapon(name="Enchanted Staff", description = "A long staff with Ovin’s stone beaming at the top. One can feel an immense power radiating from the staff.")
             npc.add_item(item)
         if npc.name == "Omar":
-            item = Item(name="Military Sword", description="A strong sword used by Miru militants.")
+            item = Weapon(name="Military Sword", description="A strong sword used by Miru militants.", is_powerful = True)
             npc.add_item(item)
         if npc.name == "Qayral":
-            item = Item(name="Qayral's Scale", description="A shiny scale from the skin of a Qayral. There seems to be something radiating from it, making one feel very uneasy. Only those that have special abilities are able to get this scale of a Qayral.")
+            item = Item(name="Qayral's Scale", description="A shiny scale from the skin of a Qayral. There seems to be something radiating from it, making one feel very uneasy. Only those that have special abilities are able to get this scale of a Qayral.", is_powerful = True)
             npc.add_item(item)
             
 def pick_class(map: Dict[int, Location]) -> Player:
