@@ -122,12 +122,18 @@ def display_cmds(menu: str = "Available Commands:") -> None:
     """
     print("\n\n")
     print(menu)
-    print(" - go <direction>\t-> travel to another location")
-    print(" - fight <npc>\t-> fight an npc in the location")
-    print(" - look\t\t-> look around the area")
-    print(" - stats\t\t-> view your character stats")
-    print(" - quit or q\t-> quit the game")
-    print(" - help or h\t-> display this help menu")
+    commands = [
+        ("go <direction>", "travel to another location"),
+        ("fight <npc>", "fight an npc in the location"),
+        ("look", "look around the area"),
+        ("stats", "view your character stats"),
+        ("quit or q", "quit the game"),
+        ("help or h", "display this help menu"),
+    ]
+
+    for cmd, desc in commands:
+        print(f" - {cmd:<15} -> {desc}")
+
     print("")
 
 
