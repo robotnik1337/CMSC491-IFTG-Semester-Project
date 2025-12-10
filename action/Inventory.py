@@ -1,13 +1,10 @@
 from action.Action import Action, Player
 from location.Location import Location
 from typing import Dict
-from utils.utils import display_cmds
-
-# Constants
 
 
-class Stats(Action):
-    """Action to look at your stats
+class Inventory(Action):
+    """Action to look at your inventory
 
     Attributes:
         current_loc (Location): Holds the current location of the player
@@ -24,8 +21,7 @@ class Stats(Action):
         self.execute()
 
     def execute(self) -> None:
-        """Prints Stats"""
-        print(f"Player Name: {self.player.name}")
-        print(f"Player Class: {type(self.player).__name__}")
-        print(f"Health Points: {self.player.hp}")
-        print(f"Mana Points: {self.player.mana}")
+        """Prints Inventory"""
+        print("Inventory:")
+        for item in self.player.inventory:
+            print(f"{item.name}: {item.description}")
