@@ -1,8 +1,9 @@
 from character.Player import Player, Warrior, Mage
 from character.Npc import Npc
 from location.Location import Location
-from typing import Dict
+from typing import Dict, List
 from item.Item import Item, Weapon
+from quest.Quest import Quest
 
 
 def load_map() -> Dict[int, Location]:
@@ -76,7 +77,15 @@ def load_items(npc_list: Dict[str, Npc]) -> None:
             npc.add_item(item)
 
 
-def pick_class(map: Dict[int, Location]) -> Player:
+def load_quests() -> Dict[str, List[Quest]]:
+    """Loads quest objects in and creates a dictionary where
+    quests["mage"] returns a list of Quest objects in order and 
+    quests["warrior"] returns a list of Quest objects in order
+    """
+    pass
+
+
+def pick_class(map: Dict[int, Location], quests: Dict[str, List[Quest]]) -> Player:
     """Character creation
 
     Parameters:
@@ -100,7 +109,7 @@ def pick_class(map: Dict[int, Location]) -> Player:
         print("Your journey begins...")
         print("------------------------------------------\n")
         weapon = Weapon(name="Knife", description="A small knife.", is_powerful=False)
-        player_obj = Warrior(name=name, location=map[1])
+        player_obj = Warrior(name=name, location=map[1], quest=quests["warrior"][0])
         player_obj.add_item(weapon)
         return player_obj
     else:
@@ -110,7 +119,7 @@ def pick_class(map: Dict[int, Location]) -> Player:
         print("Your jouney begins...")
         print("----------------------------------------\n")
         weapon = Weapon(name="Wand", description="A small, sturdy wand.", is_powerful=False)
-        player_obj = Mage(name=name, location=map[6])
+        player_obj = Mage(name=name, location=map[6], quest=quests["mage"][0])
         player_obj.add_item(weapon)
         return player_obj
 
