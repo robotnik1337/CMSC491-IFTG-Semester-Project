@@ -62,7 +62,7 @@ class Fight(Action):
                     self.display_result(FAILURE + self.enemy_npc.name)
                     self.display_result(POWERFUL_DAMAGE)
                     self.player.hp -= 20
-            elif self.enemy_npc.name == "Grand Mage Archilus":
+            elif self.enemy_npc.name == "Old Mage Supreme Sotek":
                 if powerful_weapon:
                     #remove npc from location
                     for item in self.enemy_npc.inventory:

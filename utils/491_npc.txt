@@ -1,4 +1,5 @@
-Grand Mage Archilus| 6| One of the superintendent of the well-renowned Magic Academy, a highly-esteemed academy for magic arcs. He has been studying magic for several decades, an excellent master of his craft.| 1
-Old Mage Supreme Sotek| 4| One of the old Mage Supremes, an immensely powerful mage that mastered all of the elemental forces. Sotek stays to himself in the city of Elria, crafting potions from time to time to make money.| 0
+Grand Mage Archilus| 6| One of the superintendent of the well-renowned Magic Academy, a highly-esteemed academy for magic arcs. He has been studying magic for several decades, an excellent master of his craft.| 0
+Old Mage Supreme Sotek| 4| One of the old Mage Supremes, an immensely powerful mage that mastered all of the elemental forces. Sotek stays to himself in the city of Elria, crafting potions from time to time to make money.| 1
 Evil Imp| 7| A demonic imp that roams Wycan Forest. It yearns to consume the unforunate souls that explore this forest.| 1
-Lieutenant Omar| 2| An experienced militant who holds allegiance to defending Miru and protecting its people from the Qayral and other dangers. He leads an army of 200, training and preparing for battle.| 1
+Lieutenant Omar| 2| An experienced militant who holds allegiance to defending Miru and protecting its people from the Qayral and other dangers. He leads an army of 200, training and preparing for battle.| 0
+Qayral| 3| Large, reptilian beasts that live in Jinn’s Lair. They target the people of Miru constantly, hoping to break into it and devour the people there.| 1

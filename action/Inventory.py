@@ -1,9 +1,6 @@
 from action.Action import Action, Player
 from location.Location import Location
 from typing import Dict
-from utils.utils import display_cmds
-
-# Constants
 
 
 class Inventory(Action):

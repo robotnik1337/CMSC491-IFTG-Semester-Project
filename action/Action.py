@@ -16,7 +16,7 @@ class Action:
                  verb: str = None, noun: str = None):
         """Initializes Base Action Class"""
         self.player = player
-        self.verb = verb
+        self.verb = verb  # cmd from main.py
         self.noun = noun
 
     def can_execute(self):

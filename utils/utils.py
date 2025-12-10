@@ -66,15 +66,16 @@ def load_items(npc_list: Dict[str, Npc]) -> None:
             item = Item(name="Ovin's Stone", description="a magical stone imbued with the power of Ovin, one of the past celestials who, in folklore, was deemed responsible for the curse of the Wycan Forest.")
             npc.add_item(item)
         if npc.name == "Grand Mage Archilus":
-            item = Weapon(name="Enchanted Staff", description = "A long staff with Ovin’s stone beaming at the top. One can feel an immense power radiating from the staff.")
+            item = Weapon(name="Enchanted Staff", description = "A long staff with Ovin’s stone beaming at the top. One can feel an immense power radiating from the staff.", is_powerful=True)
             npc.add_item(item)
         if npc.name == "Omar":
-            item = Weapon(name="Military Sword", description="A strong sword used by Miru militants.", is_powerful = True)
+            item = Weapon(name="Military Sword", description="A strong sword used by Miru militants.", is_powerful=True)
             npc.add_item(item)
         if npc.name == "Qayral":
-            item = Item(name="Qayral's Scale", description="A shiny scale from the skin of a Qayral. There seems to be something radiating from it, making one feel very uneasy. Only those that have special abilities are able to get this scale of a Qayral.", is_powerful = True)
+            item = Item(name="Qayral's Scale", description="A shiny scale from the skin of a Qayral. There seems to be something radiating from it, making one feel very uneasy. Only those that have special abilities are able to get this scale of a Qayral.")
             npc.add_item(item)
-            
+
+
 def pick_class(map: Dict[int, Location]) -> Player:
     """Character creation
 
@@ -98,7 +99,7 @@ def pick_class(map: Dict[int, Location]) -> Player:
         print(f"You are now a **Warrior**, {name} of Miru")
         print("Your journey begins...")
         print("------------------------------------------\n")
-        weapon = Weapon(name="Knife", description="A small knife.")
+        weapon = Weapon(name="Knife", description="A small knife.", is_powerful=False)
         player_obj = Warrior(name=name, location=map[1])
         player_obj.add_item(weapon)
         return player_obj
@@ -108,7 +109,7 @@ def pick_class(map: Dict[int, Location]) -> Player:
         print(f"You are now a **Mage**, {name} of Ashen")
         print("Your jouney begins...")
         print("----------------------------------------\n")
-        weapon = Weapon(name="Wand", description="A small, sturdy wand.")
+        weapon = Weapon(name="Wand", description="A small, sturdy wand.", is_powerful=False)
         player_obj = Mage(name=name, location=map[6])
         player_obj.add_item(weapon)
         return player_obj
