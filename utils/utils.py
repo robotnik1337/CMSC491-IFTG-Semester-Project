@@ -18,16 +18,32 @@ def load_map() -> Dict[int, Location]:
             directions = [int(chunks[3]), int(chunks[4]),
                           int(chunks[5]), int(chunks[6])]
             loc = Location(id=id, name=name, desc=desc, directions=directions)
+            if id == 5:
+                # Special case, bark in this location
+                item = Item(name="Bark of Agbara",
+                            description="The grand tree of Agbara was placed here by the hero Arun, \
+                            legends say the celestial Simi bestowed the tree to Arun as her dying wish. \
+                            Many who travel through here get a piece of the bark for good fortune.",
+                            gettable=True)
+                loc.add_item(item)
+            elif id == 4:
+                # Special case, sword in this location
+                item = Item(name="Greatsword of Nerus",
+                            description="Stuck in an engraved stone, there was a greatsword was used by \
+                            the great Swordsman Nerus. One of the strongest warriors to have ever existed.\
+                            Many have tried to pull the sword to no avail.")
+                loc.add_item(item)
             map[loc.id] = loc
     return map
 
 
-def load_npc(map: Dict[int, Location]) -> None:
+def load_npc(map: Dict[int, Location]) -> Dict[str, Npc]:
     """Loads in all NPCs and places them in their Locations
 
     Parameters:
         map (Dict[int, Location]): Game map, key: id, value: location
     """
+    npcs = {}
     with open("utils/491_npc.txt", "r") as f:
         lines = f.read().splitlines()
         for line in lines:
@@ -38,6 +54,8 @@ def load_npc(map: Dict[int, Location]) -> None:
             is_fightable = bool(int(chunks[3]))
             npc = Npc(name=name, desc=desc, is_fightable=is_fightable)
             map[loc_id].add_npc(npc)  # Add loaded Npc into current Location
+            npcs[name] = npc
+    return npcs
 
 
 def pick_class(map: Dict[int, Location]) -> Player:
