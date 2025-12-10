@@ -34,7 +34,8 @@ def load_npc(map: Dict[int, Location]) -> None:
             name = chunks[0]
             loc_id = int(chunks[1])
             desc = chunks[2]
-            npc = Npc(name=name, desc=desc)
+            is_fightable = bool(int(chunks[3]))
+            npc = Npc(name=name, desc=desc, is_fightable=is_fightable)
             map[loc_id].add_npc(npc)  # Add loaded Npc into current Location
 
 
@@ -69,7 +70,11 @@ def display_cmds(menu: str = "Available Commands:") -> None:
     print("\n\n")
     print(menu)
     print(" - go <direction>\t-> travel to another location")
+    print(" - fight <npc>\t-> fight an npc in the location")
+    print(" - look\t\t-> look around the area")
+    print(" - stats\t\t-> view your character stats")
     print(" - quit or q\t-> quit the game")
+    print(" - help or h\t-> display this help menu")
     print("")
 
 
