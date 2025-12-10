@@ -21,17 +21,13 @@ def load_map() -> Dict[int, Location]:
             if id == 5:
                 # Special case, bark in this location
                 item = Item(name="Bark of Agbara",
-                            description="The grand tree of Agbara was placed here by the hero Arun, \
-                            legends say the celestial Simi bestowed the tree to Arun as her dying wish. \
-                            Many who travel through here get a piece of the bark for good fortune.",
+                            description="The grand tree of Agbara was placed here by the hero Arun, legends say the celestial Simi bestowed the tree to Arun as her dying wish. Many who travel through here get a piece of the bark for good fortune.",
                             gettable=True)
                 loc.add_item(item)
             elif id == 4:
                 # Special case, sword in this location
                 item = Item(name="Greatsword of Nerus",
-                            description="Stuck in an engraved stone, there was a greatsword was used by \
-                            the great Swordsman Nerus. One of the strongest warriors to have ever existed.\
-                            Many have tried to pull the sword to no avail.")
+                            description="Stuck in an engraved stone, there was a greatsword was used by the great Swordsman Nerus. One of the strongest warriors to have ever existed. Many have tried to pull the sword to no avail.")
                 loc.add_item(item)
             map[loc.id] = loc
     return map
@@ -56,6 +52,7 @@ def load_npc(map: Dict[int, Location]) -> Dict[str, Npc]:
             map[loc_id].add_npc(npc)  # Add loaded Npc into current Location
             npcs[name] = npc
     return npcs
+
 
 def load_items(npc_list: Dict[str, Npc]) -> None:
     """Loads in all Items and places them in their Locations or NPCs
