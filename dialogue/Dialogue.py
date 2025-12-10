@@ -11,7 +11,8 @@ def generate_dialogue(quest, player, npc):
   Returns:
     dialogue (string): generated dialogue from the fine-tuned model
   """
-
+  client = openai.OpenAI(api_key="API_KEY")
+  
   # creating the prompt for the model
   prompt = "Quest Name: {quest_name}\n".format(quest_name=quest['name'])
   prompt += "Quest Objective: {quest_objective}\n".format(quest_objective=quest['objective'])
