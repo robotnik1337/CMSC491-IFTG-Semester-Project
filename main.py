@@ -10,7 +10,7 @@ HELP_MENU = "HELP MENU:"
 
 if __name__ == "__main__":
     map = load_map()
-    load_npc(map)
+    npcs = load_npc(map)
     user = pick_class(map)
     user.location.display()
     display_cmds()
