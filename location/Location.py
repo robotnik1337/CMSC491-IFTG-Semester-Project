@@ -125,3 +125,14 @@ class Location:
             item (Item): item
         """
         self.items.append(item)
+
+    def remove_npc(self, npc: Npc) -> None:
+        """Removes Npc from Location
+
+        Parameters:
+            npc (str): name of character
+        """
+        for character in self.npcs:
+            if npc.name.lower() in character.name.lower():
+                self.npcs.remove(character)
+                return

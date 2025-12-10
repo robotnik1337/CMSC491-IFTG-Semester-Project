@@ -57,7 +57,27 @@ def load_npc(map: Dict[int, Location]) -> Dict[str, Npc]:
             npcs[name] = npc
     return npcs
 
+def load_items(npc_list: Dict[str, Npc]) -> None:
+    """Loads in all Items and places them in their Locations or NPCs
 
+    Parameters:
+        map (Dict[int, Location]): Game map, key: id, value: location
+        npc_list (Dict[str, Npc]): All NPCs in the game, key: name, value: Npc
+    """
+    for npc in npc_list.values():
+        if npc.name == "Evil Imp":
+            item = Item(name="Ovin's Stone", description="a magical stone imbued with the power of Ovin, one of the past celestials who, in folklore, was deemed responsible for the curse of the Wycan Forest.")
+            npc.add_item(item)
+        if npc.name == "Grand Mage Archilus":
+            item = Item(name="Enchanted Staff", description = "A long staff with Ovin’s stone beaming at the top. One can feel an immense power radiating from the staff.")
+            npc.add_item(item)
+        if npc.name == "Omar":
+            item = Item(name="Military Sword", description="A strong sword used by Miru militants.")
+            npc.add_item(item)
+        if npc.name == "Qayral":
+            item = Item(name="Qayral's Scale", description="A shiny scale from the skin of a Qayral. There seems to be something radiating from it, making one feel very uneasy. Only those that have special abilities are able to get this scale of a Qayral.")
+            npc.add_item(item)
+            
 def pick_class(map: Dict[int, Location]) -> Player:
     """Character creation
 

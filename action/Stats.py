@@ -28,9 +28,10 @@ class Stats(Action):
         print(f"Player Name: {self.player.name}")
         print(f"Player Class: {type(self.player).__name__}")
         print(f"Health Points: {self.player.hp}")
+        print(f"Mana Points: {self.player.mana}")
         print("Inventory:")
         if not self.player.inventory:
             print("Your inventory is empty.\n")
         else:
             for item in self.player.inventory:
-                print(f"{item.name}: {item.desc}\n")
+                print(f"{item.name}: {item.description}\n")
