@@ -35,3 +35,4 @@ class Action:
     def display_result(self, msg):
         """Displays the result of the players action"""
         print(msg)
+
