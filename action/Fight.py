@@ -33,7 +33,7 @@ class Fight(Action):
         """Checks if the character in the location is fightable"""
         for npc in self.current_loc.npcs:
             if self.noun.lower() in npc.name.lower():
-                self.enemy_npc = npc.name
+                self.enemy_npc = npc
                 return npc.is_fightable
         return False
 
@@ -48,11 +48,13 @@ class Fight(Action):
                     if type(item).__name__ == "Weapon":
                         
                         #remove npc from location
+                        for item in self.enemy_npc.inventory:
+                            self.player.inventory.append(item)
                         self.current_loc.remove_npc(self.enemy_npc)
-                        self.display_result(SUCCESS + self.enemy_npc)
+                        self.display_result(SUCCESS + self.enemy_npc.name)
                         return
-            self.display_result(FAILURE + self.enemy_npc)
+            self.display_result(FAILURE + self.enemy_npc.name)
             self.display_result(DAMAGE)
             self.player.hp -= 10
         else:
-            self.display_result(UNABLE +self.enemy_npc)
+            self.display_result(UNABLE +self.enemy_npc.name)

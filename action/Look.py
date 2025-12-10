@@ -26,14 +26,17 @@ class Look(Action):
         """Print description, npcs, items"""
         self.current_loc.display()
         #  if noun is a proper direction
-        print("NPC's:")
-        for npc in self.current_loc.npcs:
-            print(f"You see {npc.name}: {npc.desc}\n")
-        print("Items:")
+        if not self.current_loc.npcs:
+            print("There are no NPCs here.\n")
+        else:
+            for npc in self.current_loc.npcs:
+                print(f"You see {npc.name}: {npc.desc}\n")
+
+        
         if not self.current_loc.items:
             print("There are no items here.\n")
         else:
             for item in self.current_loc.items:
-                print(f"You see {item.name}: {item.desc}\n")
+                print(f"{item.description}\n")
 
         self.display_result("Looked around the area...")
