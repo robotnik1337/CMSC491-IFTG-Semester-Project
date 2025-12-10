@@ -2,6 +2,7 @@ from typing import List
 from character.Character import Character
 from location.Location import Location
 from item.Item import Item
+from quest.Quest import Quest
 
 
 class Player(Character):
@@ -13,9 +14,13 @@ class Player(Character):
 
     def __init__(self, name: str = "", inventory: List[Item] | None = None,
                  hp: int = 0, mana: int = 0,
-                 location: Location | None = None) -> None:
+                 location: Location | None = None,
+                 quest: Quest | None = None) -> None:
         super().__init__(name, inventory, hp, mana)
         self.location = location
+        self.quest = quest
+        self.is_trained = False
+        self.stage = 0  # stage of the game you're on
 
     def set_location(self, location: Location) -> None:
         self.location = location
@@ -31,10 +36,15 @@ class Mage(Player):
 
     def __init__(self, name: str = "", inventory: List[Item] | None = None,
                  hp: int = 70, mana: int = 150,
-                 location: Location | None = None) -> None:
-        super().__init__(name, inventory, hp, mana, location)
+                 location: Location | None = None,
+                 quest: Quest | None = None) -> None:
+        super().__init__(name, inventory, hp, mana, location, quest)
         self.classname = "Mage"
         self.classdesc = "A young mage from Ashen who desires to become one of the greatest mages to exist, a Mage Supreme. After the death of their father due to the evil that surrounds Ashen, they seek to gain more power to protect themselves and their loved ones."
+
+    def update_stage(self) -> None:
+        """Every move checks to potentially move to next stage"""
+        pass
 
 
 class Warrior(Player):
@@ -48,8 +58,13 @@ class Warrior(Player):
 
     def __init__(self, name: str = "", inventory: List[Item] | None = None,
                  hp: int = 150, mana: int = 50,
-                 location: Location | None = None) -> None:
-        super().__init__(name, inventory, hp, mana, location)
+                 location: Location | None = None,
+                 quest: Quest | None = None) -> None:
+        super().__init__(name, inventory, hp, mana, location, quest)
         self.classname = "Warrior"
         self.classdesc = "A young warrior from Miru, inspired by their older brother’s military experience, who wants to become strong enough to swing their own sword and defend their family and community from the Qayral."
         self.chosen = False
+
+    def update_stage(self) -> None:
+        """Every move checks to potentially move to next stage"""
+        pass
