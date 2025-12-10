@@ -7,6 +7,7 @@ def generate_dialogue(quest, player, npc):
   Args:
     quest (dictionary): A dictionary (json) of the quest's information
     player (object): Player object that contains player's name, class name, and class description
+    npc (object): NPC object that contain's npc's name and description
 
   Returns:
     dialogue (string): generated dialogue from the fine-tuned model
@@ -47,18 +48,22 @@ def generate_dialogue(quest, player, npc):
   ft_model = "ft:gpt-4.1-nano-2025-04-14:personal::CkcA27cd"
   response = client.completions.create(
       model=ft_model,
-      prompt="Given this quest information, generate dialogue for {npc} speaking to the player {player_name}.\nPlayer's description is: {player_class}: {desc}\n{npc}'s description is: {npc_desc}\n".format(
+      prompt="Given this quest information, generate dialogue for {npc} speaking to the player {player_name}. You are the {npc}.\nPlayer's description is: {player_class}: {desc}\n{npc}'s description is: {npc_desc}. {npc}'s goal: {goal}\nDo not generate any dialogue for the player, only out the dialogue for the {npc}. Make sure to fit everything within the token limit of 80.\n".format(
           npc=npc.name,
           npc_desc=npc.description,
           player_name=player.name,
           player_class=player.classname,
-          desc=player.classdesc),
-          temperature=0.5,
-          max_tokens=64,
+          desc=player.classdesc,
+          goal=quest["goal"]),
+          temperature=0.6,
+          max_tokens=80,
           top_p=1,
           frequency_penalty=0,
           presence_penalty=0,
           stop=["###"]
   )
 
-  return response.choices[0].text
+  # get one of the dialogue strings if more than one was generated.
+  dialogue_pieces = response.choices[0].text.split(": ")
+
+  return dialogue_pieces[-1]
