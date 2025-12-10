@@ -16,7 +16,7 @@ class Character:
                  hp: int = 0, mana: int = 0) -> None:
         """Initializes the Base Character Class"""
         self.name = name
-        self.inventory = inventory
+        self.inventory = inventory if inventory is not None else []
         self.hp = hp
         self.mana = mana
         self.is_alive = True

@@ -2,6 +2,7 @@ from character.Player import Player, Warrior, Mage
 from character.Npc import Npc
 from location.Location import Location
 from typing import Dict
+from item.Item import Item, Weapon
 
 
 def load_map() -> Dict[int, Location]:
@@ -44,20 +45,37 @@ def pick_class(map: Dict[int, Location]) -> Player:
     Parameters:
         map (Dict[int, Location]): Game map, key: id, value: location
     """
+    print("---------------------")
     print("Welcome to Chosen One")
-    print("Player creation: \n")
-    name = input("Hero Name: ")
-    print()
-    print("What class would you like your hero to be?")
-    choice = input("\n1. Warrior \n2. Mage \n")
+    print("---------------------")
+    print("\nChoose your class to begin your journey.\n")
+    print("What class would you like your hero to be: 1. Warrior or 2. Mage?")
+    choice = input("> ")
     while choice not in ["1", "2"]:
-        choice = input("Invalid choice. Please pick 1 or 2: \n")
-    print()
-    print()
+        print("Invalid choice. Please pick 1 or 2.")
+        choice = input("> ")
+    print("\nEnter your character name:")
+    name = input("> ")
     if choice == "1":
-        return Warrior(name=name, location=map[1])
+        print()
+        print("------------------------------------------")
+        print(f"You are now a **Warrior**, {name} of Miru")
+        print("Your journey begins...")
+        print("------------------------------------------\n")
+        weapon = Weapon(name="Knife", description="A small knife.")
+        player_obj = Warrior(name=name, location=map[1])
+        player_obj.add_item(weapon)
+        return player_obj
     else:
-        return Mage(name=name, location=map[6])
+        print()
+        print("----------------------------------------")
+        print(f"You are now a **Mage**, {name} of Ashen")
+        print("Your jouney begins...")
+        print("----------------------------------------\n")
+        weapon = Weapon(name="Wand", description="A small, sturdy wand.")
+        player_obj = Mage(name=name, location=map[6])
+        player_obj.add_item(weapon)
+        return player_obj
 
 
 def display_cmds(menu: str = "Available Commands:") -> None:
@@ -78,10 +96,3 @@ def parser(line: str) -> str:
     words = [word.lower() for word in line.split()]
     return (words[0] if len(words) > 0 else None,
             words[1] if len(words) > 1 else None)
-
-
-def addItemtoLocation(item, location):
-    """Adds an item to a location's items list (handles missing 'items' attribute)."""
-    if not hasattr(location, 'items') or location.items is None:
-        location.items = []
-    location.items.append(item)
