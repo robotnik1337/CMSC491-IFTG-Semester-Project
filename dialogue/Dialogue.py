@@ -15,6 +15,7 @@ def generate_dialogue(quest: Quest, player: Mage | Warrior, npc: Npc):
   Returns:
     dialogue (string): generated dialogue from the fine-tuned model
   """
+
   client = openai.OpenAI(api_key="your-key")
   # creating the prompt for the model
   prompt = "Quest Name: {quest_name}\n".format(quest_name=quest.name)
@@ -48,7 +49,9 @@ def generate_dialogue(quest: Quest, player: Mage | Warrior, npc: Npc):
 
 
   # call the model and generate dialogue
-  ft_model = "ft:gpt-4.1-nano-2025-04-14:personal::CkcA27cd"
+  ft_model = "ft:gpt-4.1-nano-2025-04-14:personal::CkcA27cd" # insert your fine-tuned model 
+
+  # can play around with the arguments in this function
   response = client.completions.create(
       model=ft_model,
       prompt="Given this quest information, generate dialogue for {npc} speaking to the player {player_name}. You are the {npc}.\nPlayer's description is: {player_class}: {desc}\n{npc}'s description is: {npc_desc}. {npc}'s goal: {goal}\nDo not generate any dialogue for the player, only out the dialogue for the {npc}. Make sure to fit everything within the token limit of 70.\n".format(
