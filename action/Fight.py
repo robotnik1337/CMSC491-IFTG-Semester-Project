@@ -29,7 +29,6 @@ class Fight(Action):
         self.execute()
         self.enemy_npc =None
 
-
     def can_execute(self) -> bool:
         """Checks if the character in the location is fightable"""
         for npc in self.current_loc.npcs:
@@ -37,8 +36,6 @@ class Fight(Action):
                 self.enemy_npc = npc
                 return npc.is_fightable
         return False
-
-        
 
     def execute(self) -> None:
         """Fight the targeted NPC"""

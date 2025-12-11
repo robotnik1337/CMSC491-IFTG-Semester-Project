@@ -169,7 +169,7 @@ def pick_class(map: Dict[int, Location], quests: Dict[str, List[Quest]]) -> Play
         print("Your journey begins...")
         print("------------------------------------------\n")
         weapon = Weapon(name="Knife", description="A small knife.", is_powerful=False)
-        player_obj = Warrior(name=name, location=map[1], quest=Quest())
+        player_obj = Warrior(name=name, location=map[1], quest=quests["warrior"][0])
         player_obj.add_item(weapon)
         return player_obj
     else:
@@ -179,7 +179,7 @@ def pick_class(map: Dict[int, Location], quests: Dict[str, List[Quest]]) -> Play
         print("Your jouney begins...")
         print("----------------------------------------\n")
         weapon = Weapon(name="Wand", description="A small, sturdy wand.", is_powerful=False)
-        player_obj = Mage(name=name, location=map[6], quest=Quest())
+        player_obj = Mage(name=name, location=map[6], quest=quests["mage"][0])
         player_obj.add_item(weapon)
         return player_obj
 
