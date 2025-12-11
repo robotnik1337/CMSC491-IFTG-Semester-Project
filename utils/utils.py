@@ -205,7 +205,7 @@ def display_cmds(menu: str = "Available Commands:") -> None:
     ]
 
     for cmd, desc in commands:
-        print(f" - {cmd:<20} -> {desc}")
+        print(f" - {cmd:<35} -> {desc}")
 
     print("")
 

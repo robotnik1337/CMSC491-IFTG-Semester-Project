@@ -46,3 +46,6 @@ if __name__ == "__main__":
             print("\n\n")
             print("Thanks for playing!")
             sys.exit(0)
+
+        # user.update_stage() needs to be uncommented once update_stage is implemented for both classes
+        # if user.stage == FINAL (int) -> output final code
