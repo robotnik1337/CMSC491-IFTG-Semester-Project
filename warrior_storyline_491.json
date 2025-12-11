@@ -16,7 +16,7 @@
 {
     "name": "Defend Miru II",
     "objective": "Train with Lieutenant Omar to prepare for the Qayral",
-    "first_tasks": ["train with Lieutenant Omar"],
+    "first_tasks": ["train with Lieutenant Omar, then fight the Qayral"],
     "first_task_locations": [{
         "name": "Military Base",
         "description": "One of Miru’s military bases, where training and preparation towards destroying the Qayral and defending Miru takes place."
@@ -60,7 +60,7 @@
 }, 
 {
     "name": "Defend Miru IIII",
-    "objective": "Report back to Lieutenant Omar your findings",
+    "objective": "Report back to Lieutenant Omar about your findings",
     "first_tasks": ["Report back to Lietenant Omar"],
     "first_task_locations": [{
         "name": "Military Base",
