@@ -44,7 +44,14 @@ class Mage(Player):
 
     def update_stage(self) -> None:
         """Every move checks to potentially move to next stage"""
-        pass
+        """if self.quest.name == "New Staff I":
+            pass
+        elif Ovins Stone in self.inventory and Bark of Agbara not in self.inventory:
+            self.stage = go to "New Staff III" if player already doesnt have quest
+        elif Bark of Agbara in self.inventory and Ovin Stone not in self.inventory:
+            self.stage = go to "New Staff II" if player already doesnt have quest
+        elif Bark of Agbara in self.inventory and Ovin Stone in self.inventory:
+            self.stage = go to "New Staff IV" if player already doesnt have quest"""
 
 
 class Warrior(Player):
@@ -67,4 +74,13 @@ class Warrior(Player):
 
     def update_stage(self) -> None:
         """Every move checks to potentially move to next stage"""
-        pass
+        """if self.quest.name == "Defend Mir I":
+            pass
+        elif Milit in self.inventory and Bark of Agbara not in self.inventory:
+            self.stage = go to "New Staff III" if player already doesnt have quest
+        elif Bark of Agbara in self.inventory and Ovin Stone not in self.inventory:
+            self.stage = go to "New Staff II" if player already doesnt have quest
+        elif Bark of Agbara in self.inventory and Ovin Stone in self.inventory:
+            self.stage = go to "New Staff IV" if player already doesnt have quest"""
+
+            

@@ -10,7 +10,8 @@
         "name": "",
         "description": "Mage's starting quest",
         "location": "Ashen"
-    }
+    }, 
+    "goal": "Grand Mage Archilus is willing to train the mage and help them get better."
 },
 {
     "name": "New Staff II",
@@ -34,7 +35,8 @@
         "name": "Evil Imp",
         "description": "A demonic imp that roams Wycan Forest. It yearns to consume the unfortunate souls that explore this forest.",
         "amount": 1
-    }]
+    }],
+    "goal": "After Grand Mage Archilus trained the mage, he notices that they need a better weapon. He can craft a new and better staff for the mage, so they can become Mage Supreme. Archilus advises the mage to search for a magical stone."
 },
 {
     "name": "New Staff III",
@@ -51,9 +53,10 @@
     },
     "items": [{
         "name": "Bark of Agbara",
-        "description": "A bark of the celestial tree Agbara, imbued with the celestial Simi’s power.",
+        "description": "The grand tree of Agbara was placed here by the hero Arun, legends say the celestial Simi bestowed the tree to Arun as her dying wish. Many who travel through here get a piece of the bark for good fortune.",
         "amount": 1
-    }]
+    }],
+    "goal": "After Grand Mage Archilus trained the mage, he notices that they need a better weapon. He can craft a new and better staff for the mage, so they can become Mage Supreme. Archilus advises the mage to search for a special bark."
 }, 
 {
     "name": "New Staff IV",
@@ -72,7 +75,8 @@
         "name": "Enchanted Staff",
         "description": "A long staff with Ovin’s stone beaming at the top. One can feel an immense power radiating from the staff.",
         "amount": 1
-    }]
+    }],
+    "goal": "After the mage retrieved Ovin's Stone and Bark of Agbara, Grand Mage Archilus crafts the Enchanted Staff for the mage. He commends the mage for their diligence."
 },
 {
     "name": "Supreme I",
@@ -91,7 +95,8 @@
         "name": "Old Mage Supreme Sotek",
         "description": "One of the old Mage Supremes, an immensely powerful mage that mastered all of the elemental forces. Sotek stays to himself in the city of Elria, crafting potions from time to time to make money.",
         "location": "Elria"
-    }]
+    }],
+    "goal": "Grand Mage Archilus peers into the mage's aura and notices something different yet special about the mage. Grand Mage Archilus hints to the mage to find the Old Mage Supreme."
 },
 {
     "name": "Supreme II",
@@ -110,5 +115,6 @@
         "name": "Old Mage Supreme Sotek",
         "description": "One of the old Mage Supremes, an immensely powerful mage that mastered all of the elemental forces. Sotek stays to himself in the city of Elria, crafting potions from time to time to make money.",
         "amount": 1
-    }]
+    }],
+    "goal": "The Old Mage Supreme Sotek is fascinated by the persistent yet special mage. He challenges them to fight to test whether they can defeat him and be worthy of the title of Mage Supreme."
 }]
