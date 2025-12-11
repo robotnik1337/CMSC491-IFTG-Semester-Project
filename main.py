@@ -1,5 +1,5 @@
 import sys
-from utils.utils import pick_class, parser, load_map, load_npc, display_cmds, load_items
+from utils.utils import pick_class, parser, load_map, load_npc, display_cmds, load_items, load_quests
 from action.Go import Go
 from action.Fight import Fight
 from action.Look import Look
@@ -11,8 +11,9 @@ HELP_MENU = "HELP MENU:"
 
 if __name__ == "__main__":
     map = load_map()
+    quests = load_quests()
     npcs = load_npc(map)
-    user = pick_class(map)
+    user = pick_class(map, quests)
     load_items(npcs)
     user.location.display()
     display_cmds()

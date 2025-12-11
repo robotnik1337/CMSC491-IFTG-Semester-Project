@@ -10,7 +10,8 @@
         "name": "",
         "description": "Warrior's starting quest",
         "location": ""
-    }
+    },
+    "goal": "Lieutenant Omar recognizes the warrior, since they look like their older brother. Lieutenant Omar notices the determination on the warrior's face to become stronger and defend Miru."
 },
 {
     "name": "Defend Miru II",
@@ -29,7 +30,8 @@
         "name": "Military Sword",
         "description": "A strong sword used by Miru militants",
         "amount": 1
-    }]
+    }],
+    "goal": "Lieutenant Omar decides to train the warrior intensively and reward him with the Military Sword once the training is finished. After training, Lieutenant Omar will send the warrior to fight the Qayral."
 },
 {
     "name": "Defend Miru III",
@@ -53,7 +55,8 @@
         "name": "Qayral",
         "description": "Large, reptilian beasts that live in Jinn’s Lair. They target the people of Miru constantly, hoping to break into it and devour the people there.",
         "amount": 1
-    }]
+    }],
+    "goal": ""
 }, 
 {
     "name": "Defend Miru IIII",
@@ -77,7 +80,8 @@
         "name": "Qayral",
         "description": "Large, reptilian beasts that live in Jinn’s Lair. They target the people of Miru constantly, hoping to break into it and devour the people there.",
         "amount": 1
-    }]
+    }],
+    "goal": "Lieutenant Omar is pleased with warrior's report and notices the Qayral's Scale. Lieutenant Omar commends the warrior."
 },
 {
     "name": "Chosen One I",
@@ -94,9 +98,10 @@
     },
     "items": [{
         "name": "Greatsword of Nerus",
-        "description": "A greatsword stuck in an engraved stone in Elria. This greatsword was used by the great Swordsman Nerus, one of the strongest warriors to have ever existed. Only those who are chosen can release this greatsword from the stone.",
+        "description": "Stuck in an engraved stone, there was a greatsword was used by the great Swordsman Nerus. One of the strongest warriors to have ever existed. Many have tried to pull the sword to no avail.",
         "amount": 1
-    }]
+    }],
+    "goal": "He is fascinated by the warrior's abilities and tells the warrior about the greatsword of Nerus."
 },
 {
     "name": "Chosen One II",
@@ -113,7 +118,7 @@
     },
     "items": [{
         "name": "Greatsword of Nerus",
-        "description": "A greatsword stuck in an engraved stone in Elria. This greatsword was used by the great Swordsman Nerus, one of the strongest warriors to have ever existed. Only those who are chosen can release this greatsword from the stone.",
+        "description": "Stuck in an engraved stone, there was a greatsword was used by the great Swordsman Nerus. One of the strongest warriors to have ever existed. Many have tried to pull the sword to no avail.",
         "amount": 1
     }]
 }]

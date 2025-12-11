@@ -4,6 +4,7 @@ from location.Location import Location
 from typing import Dict, List
 from item.Item import Item, Weapon
 from quest.Quest import Quest
+import json
 
 
 def load_map() -> Dict[int, Location]:
@@ -82,7 +83,66 @@ def load_quests() -> Dict[str, List[Quest]]:
     quests["mage"] returns a list of Quest objects in order and 
     quests["warrior"] returns a list of Quest objects in order
     """
-    pass
+    quests = {}
+    # get warrior's storyline
+    warrior_file = open("warrior_storyline_491.json")
+    warrior_quests_json = json.load(warrior_file)
+    warrior_storyline = []
+
+    for quest in warrior_quests_json:
+        warrior_quest = Quest()
+        warrior_quest.setName(quest['name'])
+        warrior_quest.setObjective(quest['objective'])
+        warrior_quest.setFirstTasks(quest['first_tasks'])
+        warrior_quest.setTaskLocations(quest['first_task_locations'])
+        warrior_quest.setGiver(quest['quest_giver'])
+
+        if quest.get('reward', False) != False:
+            warrior_quest.setReward(quest['reward'])
+        elif quest.get('items', False) != False:
+            warrior_quest.setItems(quest['items'])
+        elif quest.get('characters', False) != False:
+            warrior_quest.setCharacters(quest['characters'])
+        elif quest.get('enemies', False) != False:
+            warrior_quest.setEnemies(quest['enemies'])
+        elif quest.get('goal', False) != False:
+            warrior_quest.setGoal(quest['goal'])
+
+        warrior_storyline.append(warrior_quest)
+
+    quests['warrior'] = warrior_storyline
+
+    # get mage's storyline
+    mage_file = open("mage_storyline_491.json")
+    mage_quests_json = json.load(mage_file)
+    mage_storyline = []
+
+    for quest in mage_quests_json:
+        mage_quest = Quest()
+        mage_quest.setName(quest['name'])
+        mage_quest.setObjective(quest['objective'])
+        mage_quest.setFirstTasks(quest['first_tasks'])
+        mage_quest.setTaskLocations(quest['first_task_locations'])
+        mage_quest.setGiver(quest['quest_giver'])
+
+        if quest.get('reward', False) != False:
+            mage_quest.setReward(quest['reward'])
+        elif quest.get('items', False) != False:
+            mage_quest.setItems(quest['items'])
+        elif quest.get('characters', False) != False:
+            mage_quest.setCharacters(quest['characters'])
+        elif quest.get('enemies', False) != False:
+            mage_quest.setEnemies(quest['enemies'])
+        elif quest.get('goal', False) != False:
+            mage_quest.setGoal(quest['goal'])
+
+        mage_storyline.append(mage_quest)
+
+    quests['mage'] = mage_storyline
+
+    return quests
+        
+
 
 
 def pick_class(map: Dict[int, Location], quests: Dict[str, List[Quest]]) -> Player:
