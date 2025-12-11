@@ -8,7 +8,6 @@ class Item:
         self.is_gettable = gettable
 
 
-
 class Weapon(Item):
     """Child class of Item, representing a Weapon
 
@@ -23,18 +22,3 @@ class Weapon(Item):
         self.damage = damage
         self.mana_cost = mana_cost
         self.is_powerful = is_powerful
-
-
-
-
-class Armor(Item):
-    """Child class of Item, representing Armor
-
-    Attributes:
-        defense (int): amount of defense the armor provides
-    """
-
-    def __init__(self, name: str = "", description: str = "", gettable: bool = None,
-                 defense: int = 0) -> None:
-        super().__init__(name, description)
-        self.defense = defense
