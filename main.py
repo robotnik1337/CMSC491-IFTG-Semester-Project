@@ -5,6 +5,7 @@ from action.Fight import Fight
 from action.Look import Look
 from action.Stats import Stats
 from action.Inventory import Inventory
+from action.Get import Get
 
 
 HELP_MENU = "HELP MENU:"
@@ -12,7 +13,8 @@ HELP_MENU = "HELP MENU:"
 if __name__ == "__main__":
     map = load_map()
     npcs = load_npc(map)
-    user = pick_class(map)
+    quests = {}  # placeholder for now
+    user = pick_class(map, quests)
     load_items(npcs)
     user.location.display()
     display_cmds()
@@ -25,6 +27,8 @@ if __name__ == "__main__":
         if cmd == "go" and noun is not None:
             Go(user, cmd, noun, map)
             user.location.display()
+        elif (cmd == "get" or cmd == "grab" or cmd == "pull") and noun is not None:
+            Get(user, cmd, noun)
         elif cmd == "fight" and noun is not None:
             Fight(user, cmd, noun, map)
         elif (cmd == "look" or cmd == "l") and noun is None:
