@@ -136,3 +136,15 @@ class Location:
             if npc.name.lower() in character.name.lower():
                 self.npcs.remove(character)
                 return
+
+    def remove_item(self, item_obj: Item) -> None:
+        """Removes Item from location
+
+        Parameters:
+            item_obj (Item): item
+        """
+        for item in self.items:
+            if item_obj.name.lower() == item.name.lower():
+                self.items.remove(item_obj)
+                return
+

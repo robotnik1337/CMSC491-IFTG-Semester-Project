@@ -5,7 +5,7 @@ class Item:
         """
         self.name = name
         self.description = description
-        self.gettable = gettable
+        self.is_gettable = gettable
 
 
 
