@@ -21,6 +21,8 @@ class Go(Action):
         """Initializes the Action subclass Go"""
         if noun in DIRECTION_MAP:
             direction = DIRECTION_MAP[noun]
+        else:
+            direction = noun
         super().__init__(player, verb, direction)
         self.current_loc = player.location
         self.execute(map)
@@ -43,3 +45,5 @@ class Go(Action):
                 location = map[mov_id]
                 self.player.set_location(location)
                 self.display_result(f"{SUCCESS} {self.noun}...\n")
+        else:
+            self.display_result(f"There is nothing of note {self.noun} of here...\n")
