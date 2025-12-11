@@ -51,7 +51,8 @@ def load_npc(map: Dict[int, Location]) -> Dict[str, Npc]:
             desc = chunks[2]
             is_fightable = bool(int(chunks[3]))
             is_talkable = bool(int(chunks[4]))
-            npc = Npc(name=name, desc=desc, is_fightable=is_fightable, is_talkable=is_talkable)
+            default_dialogue = chunks[5]
+            npc = Npc(name=name, desc=desc, is_fightable=is_fightable, is_talkable=is_talkable, default_dialogue=default_dialogue)
             map[loc_id].add_npc(npc)  # Add loaded Npc into current Location
             npcs[name] = npc
     return npcs
@@ -170,7 +171,7 @@ def pick_class(map: Dict[int, Location], quests: Dict[str, List[Quest]]) -> Play
         print("Your journey begins...")
         print("------------------------------------------\n")
         weapon = Weapon(name="Knife", description="A small knife.", is_powerful=False)
-        player_obj = Warrior(name=name, location=map[1], quest=quests["warrior"][0])
+        player_obj = Warrior(name=name, location=map[1], quest=quests["warrior"][0], storyline=quests["warrior"])
         player_obj.add_item(weapon)
         return player_obj
     else:
@@ -180,7 +181,7 @@ def pick_class(map: Dict[int, Location], quests: Dict[str, List[Quest]]) -> Play
         print("Your jouney begins...")
         print("----------------------------------------\n")
         weapon = Weapon(name="Wand", description="A small, sturdy wand.", is_powerful=False)
-        player_obj = Mage(name=name, location=map[6], quest=quests["mage"][0])
+        player_obj = Mage(name=name, location=map[6], quest=quests["mage"][0], storyline=quests["mage"])
         player_obj.add_item(weapon)
         return player_obj
 

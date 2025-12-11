@@ -15,12 +15,12 @@ class Player(Character):
     def __init__(self, name: str = "", inventory: List[Item] | None = None,
                  hp: int = 0, mana: int = 0,
                  location: Location | None = None,
-                 quest: Quest | None = None) -> None:
+                 quest: Quest | None = None, storyline: List[Quest] | None = None) -> None:
         super().__init__(name, inventory, hp, mana)
         self.location = location
         self.quest = quest
-        self.is_trained = False
         self.stage = 0  # stage of the game you're on
+        
 
     def set_location(self, location: Location) -> None:
         self.location = location
@@ -37,21 +37,14 @@ class Mage(Player):
     def __init__(self, name: str = "", inventory: List[Item] | None = None,
                  hp: int = 70, mana: int = 150,
                  location: Location | None = None,
-                 quest: Quest | None = None) -> None:
+                 quest: Quest | None = None, storyline: List[Quest] | None = None) -> None:
         super().__init__(name, inventory, hp, mana, location, quest)
         self.classname = "Mage"
         self.classdesc = "A young mage from Ashen who desires to become one of the greatest mages to exist, a Mage Supreme. After the death of their father due to the evil that surrounds Ashen, they seek to gain more power to protect themselves and their loved ones."
+        self.storyline = storyline
 
     def update_stage(self) -> None:
         """Every move checks to potentially move to next stage"""
-        """if self.quest.name == "New Staff I":
-            pass
-        elif Ovins Stone in self.inventory and Bark of Agbara not in self.inventory:
-            self.stage = go to "New Staff III" if player already doesnt have quest
-        elif Bark of Agbara in self.inventory and Ovin Stone not in self.inventory:
-            self.stage = go to "New Staff II" if player already doesnt have quest
-        elif Bark of Agbara in self.inventory and Ovin Stone in self.inventory:
-            self.stage = go to "New Staff IV" if player already doesnt have quest"""
         
         if self.stage == 0:
             stone_flag = False
@@ -59,12 +52,28 @@ class Mage(Player):
             for item in self.inventory:
                 if item.name.lower() == "ovin's stone":
                     stone_flag = True
+                    self.quest = self.storyline[1]
                 if item.name.lower() == "bark of agbara":
                     bark_flag = True
+                    self.quest = self.storyline[2]
             
             if stone_flag and bark_flag:
-                # update quest here
                 self.stage = 1
+                self.quest = self.storyline[3]
+
+        if self.stage == 1:
+
+            for item in self.inventory:
+                if item.name == "Enchanted Staff":
+                    self.stage = 2
+                    self.quest = self.storyline[4]
+
+        if self.stage == 2:
+            if self.location == "Elria":
+                self.stage = 3
+                self.quest = self.storyline[5]
+        
+
 
 
 class Warrior(Player):
@@ -79,21 +88,44 @@ class Warrior(Player):
     def __init__(self, name: str = "", inventory: List[Item] | None = None,
                  hp: int = 150, mana: int = 50,
                  location: Location | None = None,
-                 quest: Quest | None = None) -> None:
+                 quest: Quest | None = None, storyline: List[Quest] | None = None) -> None:
         super().__init__(name, inventory, hp, mana, location, quest)
         self.classname = "Warrior"
         self.classdesc = "A young warrior from Miru, inspired by their older brother’s military experience, who wants to become strong enough to swing their own sword and defend their family and community from the Qayral."
         self.is_chosen = False
+        self.storyline = storyline
 
     def update_stage(self) -> None:
         """Every move checks to potentially move to next stage"""
-        """if self.quest.name == "Defend Mir I":
-            pass
-        elif Milit in self.inventory and Bark of Agbara not in self.inventory:
-            self.stage = go to "New Staff III" if player already doesnt have quest
-        elif Bark of Agbara in self.inventory and Ovin Stone not in self.inventory:
-            self.stage = go to "New Staff II" if player already doesnt have quest
-        elif Bark of Agbara in self.inventory and Ovin Stone in self.inventory:
-            self.stage = go to "New Staff IV" if player already doesnt have quest"""
 
-            
+        self.is_trained = False
+
+        if self.stage == 0:
+            for item in self.inventory:
+                if item.name != "Military Sword": # you havent been trained
+                    self.stage = 1
+                    self.quest = self.storyline[1]
+        
+        if self.stage == 1:
+            for item in self.inventory:  
+                if item.name == "Military Sword": # you've been trained
+                    self.stage = 2
+                    self.quest = self.storyline[2]
+
+        if self.stage == 2:
+            for item in self.inventory:
+                if item.name == "Qayral's Scale":
+                    self.stage = 3
+                    self.quest = self.storyline[3]
+                    
+        if self.stage == 3:
+            for item in self.inventory:
+                if item.name != "Qayral's Scale":
+                    self.stage = 4
+                    self.quest = self.storyline[4]
+
+        if self.stage == 4:
+            if self.location == "Elria":
+                self.stage = 5
+                self.quest = self.storyline[5]
+

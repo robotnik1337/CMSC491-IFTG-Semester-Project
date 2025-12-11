@@ -16,7 +16,6 @@ class Quest:
         self.characters = []
         self.enemies = []
         self.goal = ""
-        self.completed = False
 
     def setName(self, given_name):
         self.name = given_name
@@ -47,6 +46,3 @@ class Quest:
     
     def setGoal(self, goals):
         self.goal = goals
-
-    #def isCompleted(self): # each instance of the class will have different conditions
-    #    return True
