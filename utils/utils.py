@@ -50,7 +50,8 @@ def load_npc(map: Dict[int, Location]) -> Dict[str, Npc]:
             loc_id = int(chunks[1])
             desc = chunks[2]
             is_fightable = bool(int(chunks[3]))
-            npc = Npc(name=name, desc=desc, is_fightable=is_fightable)
+            is_talkable = bool(int(chunks[4]))
+            npc = Npc(name=name, desc=desc, is_fightable=is_fightable, is_talkable=is_talkable)
             map[loc_id].add_npc(npc)  # Add loaded Npc into current Location
             npcs[name] = npc
     return npcs
