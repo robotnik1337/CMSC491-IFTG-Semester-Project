@@ -52,6 +52,22 @@ class Mage(Player):
             self.stage = go to "New Staff II" if player already doesnt have quest
         elif Bark of Agbara in self.inventory and Ovin Stone in self.inventory:
             self.stage = go to "New Staff IV" if player already doesnt have quest"""
+        
+        if self.stage == 0:
+            stone_flag = False
+            bark_flag = False
+            for item in self.inventory:
+                if item.name.lower() == "ovin's stone":
+                    stone_flag = True
+                if item.name.lower() == "bark of agbara":
+                    bark_flag = True
+            
+            if stone_flag and bark_flag:
+                # update quest here
+                self.stage = 1
+
+        
+
 
 
 class Warrior(Player):

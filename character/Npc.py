@@ -10,7 +10,10 @@ class Npc(Character):
 
     def __init__(self, name: str = "", inventory: List[Item] | None = None,
                  hp: int = 100, mana: int = 20,
-                 desc: str = "", is_fightable: bool = False):
+                 desc: str = "", is_fightable: bool = False,
+                 is_talkable: bool = False):
         super().__init__(name, inventory, hp, mana)
         self.desc = desc
         self.is_fightable = is_fightable
+        self.is_talkable = is_talkable
+

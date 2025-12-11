@@ -6,6 +6,7 @@ from action.Look import Look
 from action.Stats import Stats
 from action.Inventory import Inventory
 from action.Get import Get
+from action.Talk import Talk
 
 
 HELP_MENU = "HELP MENU:"
@@ -31,6 +32,8 @@ if __name__ == "__main__":
             Get(user, cmd, noun)
         elif cmd == "fight" and noun is not None:
             Fight(user, cmd, noun, map)
+        elif cmd == "talk" and noun is not None:
+            Talk(user, cmd, noun)
         elif (cmd == "look" or cmd == "l") and noun is None:
             Look(user, cmd, map)
         elif (cmd == "stats" or cmd == "s") and noun is None:
