@@ -201,6 +201,7 @@ def display_cmds(menu: str = "Available Commands:") -> None:
         ("talk <npc>", "attempt to talk to an npc"),
         ("fight <npc>", "fight an npc in the location"),
         ("look", "look around the area"),
+        ("show quest", "view the quest you're currently on"),
         ("stats", "view your character stats"),
         ("quit or q", "quit the game"),
         ("help or h", "display this help menu"),
@@ -217,3 +218,14 @@ def parser(line: str) -> str:
     words = [word.lower() for word in line.split()]
     return (words[0] if len(words) > 0 else None,
             words[1] if len(words) > 1 else None)
+
+
+def show_quest(player: Warrior | Mage):
+
+    print(f"Current Quest: {player.quest.name}")
+    print(f"Current Objective: {player.quest.objective}")
+    print(f"Task(s): {player.quest.first_tasks[0]}")
+    print(f"Place to Go: {player.quest.first_task_locations[0]["name"]}")
+    if len(player.quest.reward) >= 1:
+        print(f"Reward: {player.quest.reward[0]["name"]}")
+

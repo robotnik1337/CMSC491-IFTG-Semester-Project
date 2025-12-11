@@ -36,7 +36,7 @@
 {
     "name": "Defend Miru III",
     "objective": "Defeat the Qayral near Miru",
-    "first_tasks": ["Defeat Qayral"],
+    "first_tasks": ["Defeat Qayral, then return back to Lieutenant Omar"],
     "first_task_locations": [{
         "name": "Jinn's Lair",
         "description": "A dark cave teeming with bloodlusted Qayral. There seems to be some dark energy emanating from the cave."

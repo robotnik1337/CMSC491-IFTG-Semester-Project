@@ -30,6 +30,7 @@ class Talk(Action):
             if isinstance(self.player, Mage):
                 if self.other.name == "Grand Mage Archilus":
                     if self.player.stage == 0:
+                        print("\nYou've finished your training with the Grand Mage")
                         self.player.quest = self.player.storyline[1]
                         dialogue = generate_dialogue(self.player.quest, self.player, self.other)
                         self.display_result(self.other.name + ": " + dialogue)
@@ -88,6 +89,7 @@ class Talk(Action):
                         dialogue = generate_dialogue(self.player.quest, self.player, self.other)
                         self.display_result(self.other.name + ": " + dialogue)
 
+                        print("\nYou've finished your training with Lieutenant Omar")
                         # After training, Warrior gets military sword
                         for item in self.other.inventory:
                             if item.name == "Military Sword":
@@ -96,7 +98,7 @@ class Talk(Action):
                                 self.display_result("Lieutenant Omar gave you a Military Sword")
                         
                         self.player.stage = 1
-                        self.player.quest = self.player.storyline[2]
+                        self.player.quest = self.player.storyline[2]                      
 
                     elif self.player.stage == 1:
                         dialogue = generate_dialogue(self.player.quest, self.player, self.other)

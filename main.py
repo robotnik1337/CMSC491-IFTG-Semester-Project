@@ -1,5 +1,5 @@
 import sys
-from utils.utils import pick_class, parser, load_map, load_npc, display_cmds, load_items, load_quests
+from utils.utils import pick_class, parser, load_map, load_npc, display_cmds, load_items, load_quests, show_quest
 from action.Go import Go
 from action.Fight import Fight
 from action.Look import Look
@@ -40,6 +40,8 @@ if __name__ == "__main__":
             Stats(user, cmd, map)
         elif (cmd == "inventory" or cmd == "i") and noun is None:
             Inventory(user, cmd, map)
+        elif (cmd == "show") and noun.lower() == "quest":
+            show_quest(user)
         elif (cmd == "help" or cmd == "h") and noun is None:
             display_cmds(HELP_MENU)
         elif (cmd == "quit" or cmd == "q") and noun is None:
