@@ -30,8 +30,10 @@ class Talk(Action):
             if isinstance(self.player, Mage):
                 if self.other.name == "Grand Mage Archilus":
                     if self.player.stage == 0:
+                        self.player.quest = self.player.storyline[1]
                         dialogue = generate_dialogue(self.player.quest, self.player, self.other)
                         self.display_result(self.other.name + ": " + dialogue)
+                        self.player.stage = 1
                     elif self.player.stage == 1:
                         dialogue = generate_dialogue(self.player.quest, self.player, self.other)
                         self.display_result(self.other.name + ": " + dialogue)
@@ -42,25 +44,37 @@ class Talk(Action):
                                 self.other.inventory.append(item)
                                 self.player.inventory.remove(item)
                                 self.display_result("You gave the Grand Mage Ovin's Stone")
-                            if item.name == "Bark of Agbara":
+                                if self.player.quest == self.player.storyline[1]:
+                                    self.player.quest = self.player.storyline[2]
+                            if item.name == "Bark of Agbara" and self.player.quest == self.player.storyline[2]:
                                 self.other.inventory.append(item)
                                 self.player.inventory.remove(item)
                                 self.display_result("You gave the Grand Mage the Bark of Agbara")
-                        
+                                if self.player.quest == self.player.storyline[2]:
+                                    self.player.quest = self.player.storyline[3]
+                                    self.player.stage = 2
+
+                    elif self.player.stage == 2:
+                        dialogue = generate_dialogue(self.player.quest, self.player, self.other)
+                        self.display_result(self.other.name + ": " + dialogue)
                         for item in self.other.inventory:
                             if item.name == "Enchanted Staff":
                                 self.player.inventory.append(item)
                                 self.other.inventory.remove(item)
                                 self.display_result("You've received the Enchanted Staff!")
+                                self.player.stage = 3
+                                self.player.quest = self.player.storyline[4]
                         
-                    elif self.player.stage == 2:
+                    elif self.player.stage == 3:
                         dialogue = generate_dialogue(self.player.quest, self.player, self.other)
                         self.display_result(self.other.name + ": " + dialogue)
+                        self.player.stage = 4
+                        self.player.quest = self.player.storyline[5]
                     else:
                         self.display_result(self.other.name + ": " + self.other.default_dialogue)
 
                 elif self.other.name == "Old Mage Supreme Sotek":
-                    if self.player.stage == 3:
+                    if self.player.stage == 4:
                         dialogue = generate_dialogue(self.player.quest, self.player, self.other)
                         self.display_result(self.other.name + ": " + dialogue)
                     else:
@@ -81,26 +95,31 @@ class Talk(Action):
                                 self.other.inventory.remove(item)
                                 self.display_result("Lieutenant Omar gave you a Military Sword")
                         
+                        self.player.stage = 1
+                        self.player.quest = self.player.storyline[2]
+
                     elif self.player.stage == 1:
                         dialogue = generate_dialogue(self.player.quest, self.player, self.other)
                         self.display_result(self.other.name + ": " + dialogue)
 
-                    elif self.player.stage == 2:
-                        dialogue = generate_dialogue(self.player.quest, self.player, self.other)
-                        self.display_result(self.other.name + ": " + dialogue)
-
                         # Warrior gives Qayral scale to Omar
+                        found = False
                         for item in self.player.inventory:
                             if item.name == "Qayral's Scale":
                                 self.other.inventory.append(item)
                                 self.player.inventory.remove(item)
                                 self.display_result("You gave Lieutenant Omar the Qayral's Scale")
+                                found = True
 
-                        self.player.is_chosen = True
+                        if found:
+                            self.player.stage = 2
+                            self.player.quest = self.player.storyline[4]
+                            self.player.is_chosen = True
 
-                    elif self.player.stage == 3:
+                    elif self.player.stage == 2:
                         dialogue = generate_dialogue(self.player.quest, self.player, self.other)
                         self.display_result(self.other.name + ": " + dialogue)
+                        self.player.quest = self.player.storyline[5]
 
                     # no dialogue need for stage 4 (i.e. quest 5, the final quest)
                     else:

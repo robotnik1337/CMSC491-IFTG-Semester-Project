@@ -43,38 +43,6 @@ class Mage(Player):
         self.classdesc = "A young mage from Ashen who desires to become one of the greatest mages to exist, a Mage Supreme. After the death of their father due to the evil that surrounds Ashen, they seek to gain more power to protect themselves and their loved ones."
         self.storyline = storyline
 
-    def update_stage(self) -> None:
-        """Every move checks to potentially move to next stage"""
-        
-        if self.stage == 0:
-            stone_flag = False
-            bark_flag = False
-            for item in self.inventory:
-                if item.name.lower() == "ovin's stone":
-                    stone_flag = True
-                    self.quest = self.storyline[1]
-                if item.name.lower() == "bark of agbara":
-                    bark_flag = True
-                    self.quest = self.storyline[2]
-            
-            if stone_flag and bark_flag:
-                self.stage = 1
-                self.quest = self.storyline[3]
-
-        if self.stage == 1:
-
-            for item in self.inventory:
-                if item.name == "Enchanted Staff":
-                    self.stage = 2
-                    self.quest = self.storyline[4]
-
-        if self.stage == 2:
-            if self.location == "Elria":
-                self.stage = 3
-                self.quest = self.storyline[5]
-        
-
-
 
 class Warrior(Player):
     """Child class of Player, represting the Player class Warrior. Sets HP and Mana for the class
@@ -93,39 +61,5 @@ class Warrior(Player):
         self.classname = "Warrior"
         self.classdesc = "A young warrior from Miru, inspired by their older brother’s military experience, who wants to become strong enough to swing their own sword and defend their family and community from the Qayral."
         self.is_chosen = False
-        self.storyline = storyline
-
-    def update_stage(self) -> None:
-        """Every move checks to potentially move to next stage"""
-
         self.is_trained = False
-
-        if self.stage == 0:
-            for item in self.inventory:
-                if item.name != "Military Sword": # you havent been trained
-                    self.stage = 1
-                    self.quest = self.storyline[1]
-        
-        if self.stage == 1:
-            for item in self.inventory:  
-                if item.name == "Military Sword": # you've been trained
-                    self.stage = 2
-                    self.quest = self.storyline[2]
-
-        if self.stage == 2:
-            for item in self.inventory:
-                if item.name == "Qayral's Scale":
-                    self.stage = 3
-                    self.quest = self.storyline[3]
-                    
-        if self.stage == 3:
-            for item in self.inventory:
-                if item.name != "Qayral's Scale":
-                    self.stage = 4
-                    self.quest = self.storyline[4]
-
-        if self.stage == 4:
-            if self.location == "Elria":
-                self.stage = 5
-                self.quest = self.storyline[5]
-
+        self.storyline = storyline

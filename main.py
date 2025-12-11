@@ -7,6 +7,7 @@ from action.Stats import Stats
 from action.Inventory import Inventory
 from action.Get import Get
 from action.Talk import Talk
+from character.Player import Mage, Warrior
 
 
 HELP_MENU = "HELP MENU:"
@@ -53,5 +54,18 @@ if __name__ == "__main__":
             print()
             print("Oh no! You have died.")
             sys.exit(0)
-        # user.update_stage() needs to be uncommented once update_stage is implemented for both classes
-        # if user.stage == FINAL (int) -> output final code
+        
+        if isinstance(user, Mage):
+            if len(map[4].npcs) == 0:
+                print()
+                print("You defeated one of the greatest mages in history!")
+                print(f"You are now the strongest mage in Arun, the Mage Supreme {user.name}")
+                sys.exit(0)
+        
+        if isinstance(user, Warrior):
+            for item in user.inventory:
+                if item.name == "Greatsword of Nerus":
+                    print()
+                    print("You became chosen wield the Greatsword of Nerus, and to protect the land of Arun.")
+                    print(f"You are now the strongest warrior in Arun, the Champion of the Warriors {user.name}")
+                    sys.exit(0)

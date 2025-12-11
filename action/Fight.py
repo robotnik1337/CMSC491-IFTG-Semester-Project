@@ -27,8 +27,9 @@ class Fight(Action):
         
         super().__init__(player, verb, noun)
         self.current_loc = player.location
+        self.enemy_npc = None
         self.execute()
-        self.enemy_npc =None
+        
 
     def can_execute(self) -> bool:
         """Checks if the character in the location is fightable"""
@@ -86,4 +87,7 @@ class Fight(Action):
                     self.display_result(DAMAGE)
                     self.player.hp -= 10
         else:
+            if self.enemy_npc == None:
+                self.display_result(f"{self.noun} is not a npc in this location.")
+                return
             self.display_result(self.enemy_npc.name + UNABLE)

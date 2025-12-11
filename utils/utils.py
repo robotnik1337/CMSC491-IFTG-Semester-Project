@@ -72,7 +72,7 @@ def load_items(npc_list: Dict[str, Npc]) -> None:
         if npc.name == "Grand Mage Archilus":
             item = Weapon(name="Enchanted Staff", description = "A long staff with Ovin’s stone beaming at the top. One can feel an immense power radiating from the staff.", is_powerful=True)
             npc.add_item(item)
-        if npc.name == "Omar":
+        if npc.name == "Lieutenant Omar":
             item = Weapon(name="Military Sword", description="A strong sword used by Miru militants.", is_powerful=True)
             npc.add_item(item)
         if npc.name == "Qayral":
