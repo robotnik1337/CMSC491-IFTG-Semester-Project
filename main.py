@@ -43,6 +43,15 @@ if __name__ == "__main__":
         elif (cmd == "help" or cmd == "h") and noun is None:
             display_cmds(HELP_MENU)
         elif (cmd == "quit" or cmd == "q") and noun is None:
-            print("\n\n")
+            print()
             print("Thanks for playing!")
             sys.exit(0)
+        else:
+            print("Invalid command: Type h or help to see all the valid commands!")
+
+        if user.hp <= 0:
+            print()
+            print("Oh no! You have died.")
+            sys.exit(0)
+        # user.update_stage() needs to be uncommented once update_stage is implemented for both classes
+        # if user.stage == FINAL (int) -> output final code
