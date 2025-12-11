@@ -6,9 +6,10 @@ from typing import Dict
 
 SUCCESS = "Fought and won against "
 FAILURE = "Fought and lost against "
+HINT = ". Maybe a more powerful weapon could be of use!"
 DAMAGE = "Took 10 damage!"
 POWERFUL_DAMAGE = "Took 20 damage!"
-UNABLE = "Cannot fight "
+UNABLE = " is not a foe. "
 
 
 class Fight(Action):
@@ -51,35 +52,38 @@ class Fight(Action):
             if self.enemy_npc.name == "Qayral":
                 if powerful_weapon:
                     #remove npc from location
+                    self.display_result(SUCCESS + self.enemy_npc.name)
                     for item in self.enemy_npc.inventory:
                         self.player.inventory.append(item)
+                        self.display_result(f"Recieved {item.name}.")
                     self.current_loc.remove_npc(self.enemy_npc)
-                    self.display_result(SUCCESS + self.enemy_npc.name)
                 else:
-                    self.display_result(FAILURE + self.enemy_npc.name)
+                    self.display_result(FAILURE + self.enemy_npc.name + HINT)
                     self.display_result(POWERFUL_DAMAGE)
                     self.player.hp -= 20
             elif self.enemy_npc.name == "Old Mage Supreme Sotek":
                 if powerful_weapon:
                     #remove npc from location
+                    self.display_result(SUCCESS + self.enemy_npc.name)
                     for item in self.enemy_npc.inventory:
                         self.player.inventory.append(item)
+                        self.display_result(f"Recieved {item.name}.")
                     self.current_loc.remove_npc(self.enemy_npc)
-                    self.display_result(SUCCESS + self.enemy_npc.name)
                 else:
-                    self.display_result(FAILURE + self.enemy_npc.name)
+                    self.display_result(FAILURE + self.enemy_npc.name + HINT)
                     self.display_result(POWERFUL_DAMAGE)
                     self.player.hp -= 20
             else:
                 if weapon:
                     #remove npc from location
+                    self.display_result(SUCCESS + self.enemy_npc.name)
                     for item in self.enemy_npc.inventory:
                         self.player.inventory.append(item)
+                        self.display_result(f"Recieved {item.name}.")
                     self.current_loc.remove_npc(self.enemy_npc)
-                    self.display_result(SUCCESS + self.enemy_npc.name)
                 else:
                     self.display_result(FAILURE + self.enemy_npc.name)
                     self.display_result(DAMAGE)
                     self.player.hp -= 10
         else:
-            self.display_result(UNABLE +self.enemy_npc.name)
+            self.display_result(self.enemy_npc.name + UNABLE)

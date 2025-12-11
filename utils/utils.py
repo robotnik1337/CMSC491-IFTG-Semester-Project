@@ -197,6 +197,7 @@ def display_cmds(menu: str = "Available Commands:") -> None:
         ("go <direction>", "travel to another location"),
         ("inventory or i", "view your inventory"),
         ("get or grab or pull <item>", "attempt to get item"),
+        ("talk <npc>", "attempt to talk to an npc"),
         ("fight <npc>", "fight an npc in the location"),
         ("look", "look around the area"),
         ("stats", "view your character stats"),
