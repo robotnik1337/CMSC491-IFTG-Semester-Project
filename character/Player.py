@@ -66,9 +66,6 @@ class Mage(Player):
                 # update quest here
                 self.stage = 1
 
-        
-
-
 
 class Warrior(Player):
     """Child class of Player, represting the Player class Warrior. Sets HP and Mana for the class
@@ -86,7 +83,7 @@ class Warrior(Player):
         super().__init__(name, inventory, hp, mana, location, quest)
         self.classname = "Warrior"
         self.classdesc = "A young warrior from Miru, inspired by their older brother’s military experience, who wants to become strong enough to swing their own sword and defend their family and community from the Qayral."
-        self.chosen = False
+        self.is_chosen = False
 
     def update_stage(self) -> None:
         """Every move checks to potentially move to next stage"""
