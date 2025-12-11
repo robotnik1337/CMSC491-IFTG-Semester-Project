@@ -25,7 +25,6 @@ if __name__ == "__main__":
     while (True):
         choice = input("> ")
         cmd, noun = parser(choice)
-        print(f"cmd: {cmd}, noun: {noun}\n\n")
         if cmd == "go" and noun is not None:
             Go(user, cmd, noun, map)
             user.location.display()
