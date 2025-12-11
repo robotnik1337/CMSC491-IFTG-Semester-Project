@@ -11,12 +11,12 @@
         "description": "Mage's starting quest",
         "location": "Ashen"
     }, 
-    "goal": "Grand Mage Archilus is willing to train the mage and help them become Mage Supreme."
+    "goal": "Grand Mage Archilus is willing to train the mage and help them become Mage Supreme. The"
 },
 {
     "name": "New Staff II",
     "objective": "Acquire a special magical stone to use for your new staff",
-    "first_tasks": ["defeat an evil imp"],
+    "first_tasks": ["defeat an evil imp, then return back to Grand Mage"],
     "first_task_locations": [{
         "name": "Wycan Forest",
         "description": "This forest is always dark, surrounded by a deep cloud of mist. Some of the people who’ve entered this forest never returned or went insane. Those with strong acumen can withstand whatever magic this forest entails."
@@ -41,7 +41,7 @@
 {
     "name": "New Staff III",
     "objective": "Acquire a special bark to use for your new staff",
-    "first_tasks": ["find the special tree"],
+    "first_tasks": ["find the special tree, then return back to Grand Mage"],
     "first_task_locations": [{
         "name": "Sierran Woodlands",
         "description": "A dense forest, covered in snow and trees of all kinds and shapes. Some say these trees hold magical energy that can be used to heal, curse, and much more."
@@ -81,7 +81,7 @@
 {
     "name": "Supreme I",
     "objective": "talk to Grand Mage Archilus to learn about how to get stronger",
-    "first_tasks": ["head to Elria"],
+    "first_tasks": ["head to Elria, then find Old Mage Supreme Sotek"],
     "first_task_locations": [{
         "name": "Elria",
         "description": "A beautiful, prosperous, and grand city, home to many of the mystic and physical arts. Its tall, white and gold structure beams elegance and sophistication. The city is a bustling economic hub, diverse, and well fortified."
